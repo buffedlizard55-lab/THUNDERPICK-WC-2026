@@ -34,20 +34,21 @@ Key verification anchors:
 
 ```
 ├── README.md                  ← this file
+├── .nojekyll                  ← tells GitHub Pages to serve files verbatim
 ├── data/
 │   └── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
-└── docs/                      ← static site (GitHub Pages source)
-    ├── index.html             ← tournament overview
-    ├── teams.html             ← the 8 teams & rosters
-    ├── players.html           ← all players & coaches
-    ├── roster-changes.html    ← change tracker / timeline
-    ├── betting-guide.html     ← betting framework (educational)
-    ├── cs2-guide.html         ← Counter-Strike 2 primer
-    ├── master-list.html       ← verification ledger & sources
-    └── assets/style.css       ← design system (no JS dependencies)
+├── assets/
+│   └── style.css              ← design system (no JS dependencies)
+├── index.html                 ← tournament overview          (GitHub Pages serves
+├── teams.html                 ← the 8 teams & rosters          this repo root as
+├── players.html               ← all players & coaches          the website)
+├── roster-changes.html        ← change tracker / timeline
+├── betting-guide.html         ← betting framework (educational)
+├── cs2-guide.html             ← Counter-Strike 2 primer
+└── master-list.html           ← verification ledger & sources
 ```
 
-The site is dependency-free HTML/CSS (no build step, no tracking, no external scripts).
+The site is dependency-free HTML/CSS (no build step, no tracking, no external scripts). Pages is configured to serve the **root of `main`** — a `.nojekyll` file keeps assets served verbatim.
 
 ## Data status & known limitations
 
