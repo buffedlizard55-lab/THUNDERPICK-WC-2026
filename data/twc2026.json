@@ -2,8 +2,9 @@
   "meta": {
     "project": "THUNDERPICK World Championship 2026 — Expert Hub",
     "data_verified_as_of": "2026-09-23",
-    "verification_method": "Every entry below was cross-checked against at least one primary/authoritative source (Liquipedia, HLTV.org, Valve's official VRS GitHub, Thunderpick/PRNewswire official releases, ESL press). Links are provided for manual review. Discrepancies between sources are recorded in 'irregularities'.",
-    "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant."
+    "verification_method": "Each published claim is checked against the linked public source text or structured record. Source conflicts, moving rankings and unavailable pre-event statistics are kept visible; see data/research-ledger.json and the Verified List page.",
+    "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant.",
+    "research_ledger": "data/research-ledger.json"
   },
   "tournament": {
     "name": "Thunderpick World Championship 2026 (TWC 2026)",
@@ -139,7 +140,7 @@
         "BetBoom": 15,
         "9z": 16,
         "PARIVISION": 19,
-        "Virtus.pro": "outside top 30 (listed #50 on HLTV event page, 2026-09-23)"
+        "Virtus.pro": 50
       },
       "source": "https://www.hltv.org/ranking/teams/2026/september/21"
     },
@@ -232,6 +233,18 @@
         "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing",
         "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/",
         "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "kyxsan",
+          "status": "benched Apr 20, 2026; joined Aurora",
+          "role": "player"
+        },
+        {
+          "nick": "Magisk",
+          "status": "benched before TWC; later listed with BC.Game in site research",
+          "role": "player"
+        }
       ]
     },
     {
@@ -294,6 +307,18 @@
         "https://www.hltv.org/news/41512/furia-bench-skullz-add-yekindar-as-stand-in",
         "https://www.dust2.us/news/72948/breaking-fallen-announces-retirement-on-stage-at-iem-rio",
         "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "chelo",
+          "status": "benched Apr 2025; later joined Imperial",
+          "role": "player"
+        },
+        {
+          "nick": "skullz",
+          "status": "benched Apr 2025",
+          "role": "player"
+        }
       ]
     },
     {
@@ -356,6 +381,18 @@
         "https://www.hltv.org/news/43812/official-legacy-sign-art",
         "https://www.hltv.org/news/45114/official-legacy-sign-try",
         "https://www.hltv.org/news/45509/legacy-sweep-g2-to-lift-fissure-playground-3-trophy"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "lux",
+          "status": "benched Feb 2, 2026",
+          "role": "player"
+        },
+        {
+          "nick": "saadzin",
+          "status": "moved to Imperial in July 2026",
+          "role": "player"
+        }
       ]
     },
     {
@@ -417,6 +454,23 @@
         "https://www.strafe.com/news/read/aurora-locks-in-new-cs2-roster-with-kyxsan-and-jimpphat/",
         "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened",
         "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "MAJ3R",
+          "status": "stepped down July 2, 2026",
+          "role": "player"
+        },
+        {
+          "nick": "soulfly",
+          "status": "benched July 2, 2026",
+          "role": "player"
+        },
+        {
+          "nick": "Fabre",
+          "status": "benched June 29, 2026",
+          "role": "coach"
+        }
       ]
     },
     {
@@ -478,6 +532,23 @@
         "https://www.hltv.org/news/43643/dgt-returns-to-9z",
         "https://www.hltv.org/news/43581/luken-departs-9z",
         "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "urban0",
+          "status": "benched in Nov 2025",
+          "role": "player"
+        },
+        {
+          "nick": "levi",
+          "status": "benched in Nov 2025",
+          "role": "player"
+        },
+        {
+          "nick": "Luken",
+          "status": "left in Jan 2026",
+          "role": "player"
+        }
       ]
     },
     {
@@ -539,6 +610,23 @@
         "https://www.hltv.org/team/12394/betboom",
         "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues",
         "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "RAiLWAY",
+          "status": "benched; not in Finals five",
+          "role": "player"
+        },
+        {
+          "nick": "Ax1Le",
+          "status": "transferred to TDK in Jan 2026",
+          "role": "player"
+        },
+        {
+          "nick": "FL4MUS",
+          "status": "temporary loan ended; joined GamerLegion",
+          "role": "player / loan"
+        }
       ]
     },
     {
@@ -600,14 +688,31 @@
         "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit",
         "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit",
         "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "slaxejezzz",
+          "status": "benched Sep 17, 2026; open to loan offers",
+          "role": "player"
+        },
+        {
+          "nick": "nota",
+          "status": "on loan to CYBERSHOKE",
+          "role": "player / loan"
+        },
+        {
+          "nick": "BELCHONOKK",
+          "status": "on loan to 1win",
+          "role": "player / loan"
+        }
       ]
     },
     {
       "id": "virtuspro",
       "name": "Virtus.pro",
       "region": "Russia (CIS/Europe)",
-      "route": "Global Qualifier winner (Sep 9-13, 2026; beat HOTU 3-0 in the grand final)",
-      "hltv_rank_2026_09_21": "outside top 30",
+      "route": "Global Qualifier winner (Sep 9–13, 2026; beat HOTU 3–0 in the Bo5 final)",
+      "hltv_rank_2026_09_21": 50,
       "vrs_rank_2026_09_07": 40,
       "roster": [
         {
@@ -661,6 +766,28 @@
         "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo",
         "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/",
         "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+      ],
+      "bench_or_reserve": [
+        {
+          "nick": "Perfecto",
+          "status": "benched in 2026 rebuild",
+          "role": "player"
+        },
+        {
+          "nick": "fame",
+          "status": "benched; later listed with 1win in site research",
+          "role": "player"
+        },
+        {
+          "nick": "FL1T",
+          "status": "benched then signed by PARIVISION",
+          "role": "player"
+        },
+        {
+          "nick": "FL4MUS",
+          "status": "rights transferred; later joined GamerLegion",
+          "role": "player / loan"
+        }
       ]
     }
   ],
