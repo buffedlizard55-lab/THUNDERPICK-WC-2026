@@ -1,0 +1,876 @@
+{
+  "meta": {
+    "project": "THUNDERPICK World Championship 2026 — Expert Hub",
+    "data_verified_as_of": "2026-09-23",
+    "verification_method": "Every entry below was cross-checked against at least one primary/authoritative source (Liquipedia, HLTV.org, Valve's official VRS GitHub, Thunderpick/PRNewswire official releases, ESL press). Links are provided for manual review. Discrepancies between sources are recorded in 'irregularities'.",
+    "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant."
+  },
+  "tournament": {
+    "name": "Thunderpick World Championship 2026 (TWC 2026)",
+    "edition": "4th",
+    "organizer": "GAM3RS_X",
+    "sponsor": "Thunderpick (esports betting platform)",
+    "data_partner": "GRID",
+    "game": "Counter-Strike 2",
+    "tier": "S-Tier / Valve Tier 1 (Liquipedia)",
+    "dates": "October 14-18, 2026",
+    "venue": "BLAST Studios Malta (Attard, Malta per Liquipedia; 'BLAST Studios Malta' per official release)",
+    "teams": 8,
+    "prize_pool_total_circuit_usd": 1115000,
+    "prize_pool_finals_usd": 1000000,
+    "prize_split": "50% players / 50% club share (per HLTV event page)",
+    "prize_distribution_usd": {
+      "1st": 500000,
+      "2nd": 250000,
+      "3rd": 100000,
+      "4th": 50000,
+      "5th-6th": 30000,
+      "7th-8th": 20000
+    },
+    "format": {
+      "group_stage": "Two double-elimination (GSL) groups of 4; all matches Bo3; top 2 of each group advance",
+      "playoffs": "Single-elimination bracket; Bo3 except Bo5 Grand Final; third-place decider match played"
+    },
+    "maps": [
+      "Ancient",
+      "Anubis",
+      "Cache",
+      "Dust II",
+      "Inferno",
+      "Mirage",
+      "Nuke"
+    ],
+    "broadcast": [
+      "twitch.tv/thunderpicktv",
+      "kick.com/thunderpick",
+      "youtube.com/@thunderpickesports"
+    ],
+    "previous_winners": {
+      "2023": "FaZe (online edition)",
+      "2024": "The MongolZ",
+      "2025": "FURIA (reverse sweep 3-2 vs NAVI in Malta)"
+    },
+    "context": "One of the last VRS point opportunities before the PGL Major Singapore 2026 (Nov 25 - Dec 13); PGL Masters Bucharest (Oct 24-31) follows one week after TWC."
+  },
+  "circuit_2026": [
+    {
+      "stage": "North American Series",
+      "dates": "Apr 26 - May 3, 2026",
+      "prize_usd": 15000,
+      "teams": 12,
+      "winner": "M80",
+      "runner_up": "Wildcard",
+      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/North_America"
+    },
+    {
+      "stage": "European Series #1",
+      "dates": "May 23 - 31, 2026",
+      "prize_usd": 30000,
+      "teams": 24,
+      "winner": "DragonClaw",
+      "runner_up": "TDK",
+      "source": "https://www.hltv.org/events/9171/thunderpick-world-championship-2026-europe-series-1"
+    },
+    {
+      "stage": "South American Series #1",
+      "dates": "Jun 24 - 28, 2026",
+      "prize_usd": 20000,
+      "teams": 12,
+      "winner": "ShindeN",
+      "runner_up": "UNO MILLE",
+      "source": "https://www.hltv.org/events/9239/thunderpick-world-championship-2026-south-america-series-1"
+    },
+    {
+      "stage": "South American Series #2",
+      "dates": "Jul 8 - 12, 2026",
+      "prize_usd": 20000,
+      "teams": 12,
+      "winner": "Imperial",
+      "runner_up": "BESTIA",
+      "source": "https://www.hltv.org/events/9274/thunderpick-world-championship-2026-south-america-series-2"
+    },
+    {
+      "stage": "European Series #2",
+      "dates": "Jul 25 - Aug 2, 2026",
+      "prize_usd": 30000,
+      "teams": 24,
+      "winner": "GenOne",
+      "runner_up": "Lazer Cats",
+      "source": "https://www.hltv.org/events/9296/thunderpick-world-championship-2026-europe-series-2"
+    },
+    {
+      "stage": "Global Qualifier (Closed, online Europe)",
+      "dates": "Sep 9 - 13, 2026",
+      "prize": "Spot at Finals",
+      "teams": 16,
+      "winner": "Virtus.pro (3-0 vs HOTU in final)",
+      "runner_up": "HOTU",
+      "third_fourth": "HEROIC",
+      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Qualifier"
+    },
+    {
+      "stage": "FINALS (LAN, Malta)",
+      "dates": "Oct 14 - 18, 2026",
+      "prize_usd": 1000000,
+      "teams": 8,
+      "winner": "TBD",
+      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026"
+    }
+  ],
+  "rankings_snapshot": {
+    "hltv_world_ranking_2026_09_21": {
+      "top10": [
+        "Spirit",
+        "Vitality",
+        "MOUZ",
+        "FURIA",
+        "Falcons",
+        "Legacy",
+        "FUT",
+        "G2",
+        "Aurora",
+        "Natus Vincere"
+      ],
+      "twc_teams": {
+        "FURIA": 4,
+        "Falcons": 5,
+        "Legacy": 6,
+        "Aurora": 9,
+        "BetBoom": 15,
+        "9z": 16,
+        "PARIVISION": 19,
+        "Virtus.pro": "outside top 30 (listed #50 on HLTV event page, 2026-09-23)"
+      },
+      "source": "https://www.hltv.org/ranking/teams/2026/september/21"
+    },
+    "valve_vrs_global_2026_09_07": {
+      "twc_teams": {
+        "Falcons": 3,
+        "Legacy": 6,
+        "FURIA": 7,
+        "9z": 9,
+        "Aurora": 12,
+        "BetBoom": 15,
+        "PARIVISION": 18,
+        "Virtus.pro": 40
+      },
+      "source": "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_09_07.md"
+    },
+    "valve_vrs_global_2026_08_03_invite_basis": {
+      "twc_teams": {
+        "Falcons": 2,
+        "9z": 4,
+        "Legacy": 7,
+        "FURIA": 8,
+        "BetBoom": 9,
+        "Aurora": 10,
+        "PARIVISION": 12,
+        "Virtus.pro": 37
+      },
+      "note": "August 3, 2026 VRS snapshot was the basis for the 7 direct Finals invites; Virtus.pro qualified via the Global Qualifier instead.",
+      "source": "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_08_03.md"
+    }
+  },
+  "teams": [
+    {
+      "id": "falcons",
+      "name": "Team Falcons",
+      "region": "Europe (Saudi organization)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot)",
+      "hltv_rank_2026_09_21": 5,
+      "vrs_rank_2026_09_07": 3,
+      "roster": [
+        {
+          "nick": "karrigan",
+          "name": "Finn Andersen",
+          "country": "Denmark",
+          "role": "In-game leader",
+          "joined": "April 2026 (from FaZe)"
+        },
+        {
+          "nick": "NiKo",
+          "name": "Nikola Kovač",
+          "country": "Bosnia and Herzegovina",
+          "role": "Rifler (star)",
+          "joined": "January 2025 (from G2)"
+        },
+        {
+          "nick": "m0NESY",
+          "name": "Ilya Osipov",
+          "country": "Russia",
+          "role": "AWPer",
+          "joined": "April 2025 (from G2)"
+        },
+        {
+          "nick": "TeSeS",
+          "name": "René Madsen",
+          "country": "Denmark",
+          "role": "Rifler",
+          "joined": "January 2025 (from HEROIC)"
+        },
+        {
+          "nick": "kyousuke",
+          "name": "Maksim Lukin",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "June 2025 (from Spirit Academy)"
+        }
+      ],
+      "coach": {
+        "nick": "zonic",
+        "name": "Danny Sørensen",
+        "country": "Denmark",
+        "joined": "November 2023"
+      },
+      "season_2026": [
+        "IEM Cologne Major 2026 champions (3-0 vs FURIA in grand final; m0NESY Major MVP; zonic's record 6th Major as coach)",
+        "3rd place at IEM Rio 2026",
+        "Runners-up: ESL Pro League S22, BLAST Rivals 2025 S2, BLAST Bounty 2026 S1 (pre-karrigan era had 7 grand finals, 1 title: PGL Bucharest 2025)"
+      ],
+      "key_changes": "kyxsan benched and karrigan signed from FaZe on April 20, 2026, two months before winning the IEM Cologne Major.",
+      "sources": [
+        "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing",
+        "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/",
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ]
+    },
+    {
+      "id": "furia",
+      "name": "FURIA Esports",
+      "region": "Brazil (international roster)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot). Defending TWC champions (2025).",
+      "hltv_rank_2026_09_21": 4,
+      "vrs_rank_2026_09_07": 7,
+      "roster": [
+        {
+          "nick": "FalleN",
+          "name": "Gabriel Toledo",
+          "country": "Brazil",
+          "role": "In-game leader / rifler",
+          "joined": "July 2023 (player since 2004)"
+        },
+        {
+          "nick": "yuurih",
+          "name": "Yuri Santos",
+          "country": "Brazil",
+          "role": "Rifler",
+          "joined": "long-time core"
+        },
+        {
+          "nick": "KSCERATO",
+          "name": "Kaike Cerato",
+          "country": "Brazil",
+          "role": "Rifler (closer)",
+          "joined": "long-time core"
+        },
+        {
+          "nick": "molodoy",
+          "name": "Danil Golubenko",
+          "country": "Kazakhstan",
+          "role": "AWPer",
+          "joined": "April 2025 (replaced chelo)"
+        },
+        {
+          "nick": "YEKINDAR",
+          "name": "Mareks Gaļinskis",
+          "country": "Latvia",
+          "role": "Entry rifler",
+          "joined": "April 2025 (stand-in from Liquid, then permanent; replaced skullz)"
+        }
+      ],
+      "coach": {
+        "nick": "sidde",
+        "name": "Sid Macedo",
+        "country": "Brazil",
+        "joined": "— (head coach)"
+      },
+      "season_2026": [
+        "IEM Cologne Major 2026 runners-up (0-3 vs Falcons); beat Aurora 2-0 in semifinal, 9z 2-1 in quarterfinal",
+        "Defending Thunderpick World Championship champions (2025: reverse sweep 3-2 vs NAVI in Malta)",
+        "molodoy: HLTV #6 player of 2025 + HLTV Rookie of the Year 2025; FURIA ended 2025 #1 in VRS Global"
+      ],
+      "key_changes": "No roster changes since April 2025. FalleN announced on April 17, 2026 (IEM Rio stage) that he will retire at the end of 2026 — TWC is one of his final events.",
+      "sources": [
+        "https://www.hltv.org/news/41512/furia-bench-skullz-add-yekindar-as-stand-in",
+        "https://www.dust2.us/news/72948/breaking-fallen-announces-retirement-on-stage-at-iem-rio",
+        "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025"
+      ]
+    },
+    {
+      "id": "legacy",
+      "name": "Legacy",
+      "region": "Brazil",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot)",
+      "hltv_rank_2026_09_21": 6,
+      "vrs_rank_2026_09_07": 6,
+      "roster": [
+        {
+          "nick": "arT",
+          "name": "Andrei Piovezan",
+          "country": "Brazil",
+          "role": "In-game leader",
+          "joined": "February 3, 2026 (from Fluxo; replaced lux)"
+        },
+        {
+          "nick": "dumau",
+          "name": "Eduardo Wolkmer",
+          "country": "Brazil",
+          "role": "Rifler",
+          "joined": "2025"
+        },
+        {
+          "nick": "latto",
+          "name": "Bruno Rebelatto",
+          "country": "Brazil",
+          "role": "Rifler (MVP-calibre)",
+          "joined": "2025"
+        },
+        {
+          "nick": "n1ssim",
+          "name": "Vinicius Pereira",
+          "country": "Brazil",
+          "role": "Rifler",
+          "joined": "January 2025"
+        },
+        {
+          "nick": "try",
+          "name": "Santino Rigal",
+          "country": "Argentina",
+          "role": "AWPer",
+          "joined": "July 11, 2026 (from Imperial; replaced saadzin)"
+        }
+      ],
+      "coach": {
+        "nick": "adrrr",
+        "name": "Alan Riveros",
+        "country": "Brazil",
+        "joined": "2026 (replaced RiVAS)"
+      },
+      "season_2026": [
+        "FISSURE Playground 3 champions (Sept 13, 2026: 3-0 vs G2 in Suzhou, China; latto MVP with 1.67 rating in the final)",
+        "Third consecutive title in China (CAC 2025, CAC 2026, FISSURE Playground 3); latto is a 3-time MVP, all in China",
+        "12th-14th at the IEM Cologne Major; semis of FISSURE PG3 included a 2-1 win over MIBR and a win over FURIA in the event"
+      ],
+      "key_changes": "lux benched (Feb 2) → arT signed (Feb 3); saadzin traded to Imperial → try signed (July 11) after n1ssim briefly requested a bench and returned (July 9).",
+      "sources": [
+        "https://www.hltv.org/news/43812/official-legacy-sign-art",
+        "https://www.hltv.org/news/45114/official-legacy-sign-try",
+        "https://www.hltv.org/news/45509/legacy-sweep-g2-to-lift-fissure-playground-3-trophy"
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora Gaming",
+      "region": "Europe (Turkish core, international from July 2026)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot)",
+      "hltv_rank_2026_09_21": 9,
+      "vrs_rank_2026_09_07": 12,
+      "roster": [
+        {
+          "nick": "kyxsan",
+          "name": "Damjan Stoilkovski",
+          "country": "North Macedonia",
+          "role": "In-game leader",
+          "joined": "July 8, 2026 (from Falcons bench)"
+        },
+        {
+          "nick": "XANTARES",
+          "name": "İsmailcan Dörtkardeş",
+          "country": "Türkiye",
+          "role": "Rifler (star)",
+          "joined": "Eternal Fire core (April 2025 Aurora project)"
+        },
+        {
+          "nick": "woxic",
+          "name": "Özgür Eker",
+          "country": "Türkiye",
+          "role": "AWPer",
+          "joined": "Eternal Fire core"
+        },
+        {
+          "nick": "Wicadia",
+          "name": "Ali Haydar Yalçın",
+          "country": "Türkiye",
+          "role": "Rifler",
+          "joined": "Eternal Fire core"
+        },
+        {
+          "nick": "Jimpphat",
+          "name": "Jimi Salo",
+          "country": "Finland",
+          "role": "Rifler (anchor)",
+          "joined": "July 3, 2026 (from MOUZ)"
+        }
+      ],
+      "coach": {
+        "nick": "ashhh",
+        "name": "Ashley Battye",
+        "country": "United Kingdom",
+        "joined": "July 3, 2026 (from GamerLegion)"
+      },
+      "season_2026": [
+        "IEM Cologne Major 2026 semifinalists (top-4; lost 0-2 to FURIA)",
+        "Roster went fully international in a six-day July rebuild: coach Fabre benched (Jun 29), MAJ3R stepped down & soulfly benched (Jul 2), Jimpphat + ashhh (Jul 3), kyxsan (Jul 8)"
+      ],
+      "key_changes": "Complete identity change in July 2026 — from all-Turkish to international with a new IGL and coach, ~13 days before their first event (BLAST Bounty Season 2).",
+      "sources": [
+        "https://www.strafe.com/news/read/aurora-locks-in-new-cs2-roster-with-kyxsan-and-jimpphat/",
+        "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened",
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ]
+    },
+    {
+      "id": "9z",
+      "name": "9z Team",
+      "region": "South America (Argentina/Uruguay/Chile)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot; #4 at that time)",
+      "hltv_rank_2026_09_21": 16,
+      "vrs_rank_2026_09_07": 9,
+      "roster": [
+        {
+          "nick": "max",
+          "name": "Maximiliano Gonzalez",
+          "country": "Uruguay",
+          "role": "Rifler / veteran leader",
+          "joined": "long-time 9z"
+        },
+        {
+          "nick": "dgt",
+          "name": "Franco Garcia",
+          "country": "Uruguay",
+          "role": "Lurker",
+          "joined": "January 16, 2026 (returned from paiN; replaced Luken)"
+        },
+        {
+          "nick": "meyern",
+          "name": "Ignacio Meyer",
+          "country": "Argentina",
+          "role": "AWPer",
+          "joined": "November 2025 (replaced levi)"
+        },
+        {
+          "nick": "luchov",
+          "name": "Luciano Herrera",
+          "country": "Argentina",
+          "role": "Rifler",
+          "joined": "November 2025 (replaced urban0)"
+        },
+        {
+          "nick": "HUASOPEEK",
+          "name": "Matias Ibañez Hernandez",
+          "country": "Chile",
+          "role": "Rifler",
+          "joined": "long-time 9z"
+        }
+      ],
+      "coach": {
+        "nick": "BIT",
+        "name": "Bruno Fukuda Lima",
+        "country": "Brazil",
+        "joined": "—"
+      },
+      "season_2026": [
+        "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost 1-2 to FURIA in an all-Latin-American quarterfinal)",
+        "Rose to #4 in the world on the Aug 3, 2026 VRS snapshot — a remarkable climb for a roster almost fully rebuilt in Nov 2025-Jan 2026"
+      ],
+      "key_changes": "Three changes in ~2 months: luchov + meyern in (Nov 2025), Luken out (Jan 6, 2026), dgt back (Jan 16, 2026).",
+      "sources": [
+        "https://www.hltv.org/news/43643/dgt-returns-to-9z",
+        "https://www.hltv.org/news/43581/luken-departs-9z",
+        "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/"
+      ]
+    },
+    {
+      "id": "betboom",
+      "name": "BetBoom Team",
+      "region": "Russia (Europe)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot)",
+      "hltv_rank_2026_09_21": 15,
+      "vrs_rank_2026_09_07": 15,
+      "roster": [
+        {
+          "nick": "Boombl4",
+          "name": "Kirill Mikhailov",
+          "country": "Russia",
+          "role": "In-game leader",
+          "joined": "January 2025"
+        },
+        {
+          "nick": "zorte",
+          "name": "Aleksandr Zagodyrenko",
+          "country": "Russia",
+          "role": "AWPer",
+          "joined": "re-joined spring 2026 (benched Jul 2025; stood in from Mar 2026)"
+        },
+        {
+          "nick": "S1ren",
+          "name": "Pavel Ogloblin",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "August 2023"
+        },
+        {
+          "nick": "d1Ledez",
+          "name": "Daniil Kustov",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "August 2025"
+        },
+        {
+          "nick": "Magnojez",
+          "name": "Kirill Rodnov",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "March/April 2024"
+        }
+      ],
+      "coach": {
+        "nick": "Fierce",
+        "name": "Artem Ivanov",
+        "country": "Russia",
+        "joined": "August 2025 (from 9 Pandas)"
+      },
+      "season_2026": [
+        "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost to Aurora); 4th at IEM Atlanta",
+        "Reached the Major with FL4MUS on loan from Virtus.pro (visa issues sidelined d1Ledez for three European LANs); FL4MUS' loan ended July 2 and he joined GamerLegion"
+      ],
+      "key_changes": "Stability at the core; the rotating fifth (FL4MUS loan, ended July 2026) is resolved — back to the full Boombl4-zorte-S1ren-d1Ledez-Magnojez five.",
+      "sources": [
+        "https://www.hltv.org/team/12394/betboom",
+        "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues",
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ]
+    },
+    {
+      "id": "parivision",
+      "name": "PARIVISION",
+      "region": "Russia/CIS (Europe)",
+      "route": "Direct invite — VRS Global (Aug 2026 snapshot)",
+      "hltv_rank_2026_09_21": 19,
+      "vrs_rank_2026_09_07": 18,
+      "roster": [
+        {
+          "nick": "Jame",
+          "name": "Dzhami Ali",
+          "country": "Russia",
+          "role": "AWPer (long-time VP/Outsiders IGL, Rio Major 2022 winner)",
+          "joined": "January 2025 (from Virtus.pro bench)"
+        },
+        {
+          "nick": "FL1T",
+          "name": "Evgenii Lebedev",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "July 29, 2026 (from Virtus.pro bench; replaced HObbit)"
+        },
+        {
+          "nick": "HObbit",
+          "name": "Abay Khassenov",
+          "country": "Kazakhstan",
+          "role": "Rifler (veteran)",
+          "joined": "September 17, 2026 (re-signed; replaced slaxejezzz)"
+        },
+        {
+          "nick": "xiELO",
+          "name": "Vladislav Lysov",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "2025 (PARIVISION youth)"
+        },
+        {
+          "nick": "zweih",
+          "name": "Ivan Gogin",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "2025 (PARIVISION youth)"
+        }
+      ],
+      "coach": {
+        "nick": "dastan",
+        "name": "Dastan Akbayev",
+        "country": "Kazakhstan",
+        "joined": "January 2025 (ex-VP/Outsiders)"
+      },
+      "season_2026": [
+        "15th-16th at the IEM Cologne Major",
+        "The HObbit saga: signed June 17 → replaced by FL1T on July 29 → re-signed September 17 to replace benched slaxejezzz (coach dastan said at EWC he believes HObbit is currently stronger than slaxejezzz)"
+      ],
+      "key_changes": "Two new players (FL1T, HObbit) in the two months before the Finals — the least settled roster in the field.",
+      "sources": [
+        "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit",
+        "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026"
+      ]
+    },
+    {
+      "id": "virtuspro",
+      "name": "Virtus.pro",
+      "region": "Russia (CIS/Europe)",
+      "route": "Global Qualifier winner (Sep 9-13, 2026; beat HOTU 3-0 in the grand final)",
+      "hltv_rank_2026_09_21": "outside top 30",
+      "vrs_rank_2026_09_07": 40,
+      "roster": [
+        {
+          "nick": "mir",
+          "name": "Nikolay Bityukov",
+          "country": "Russia",
+          "role": "In-game leader",
+          "joined": "March 2026 (returned to VP)"
+        },
+        {
+          "nick": "b1st",
+          "name": "Vladimir Krasikov",
+          "country": "Russia",
+          "role": "AWPer",
+          "joined": "2026 (VP.Prodigy academy)"
+        },
+        {
+          "nick": "tO0RO",
+          "name": "Vadim Arkov",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "2026 (VP.Prodigy academy)"
+        },
+        {
+          "nick": "AquaRS",
+          "name": "Aleksandr Kovalev",
+          "country": "Russia",
+          "role": "Rifler",
+          "joined": "March 12, 2026 (promoted from VP.Prodigy)"
+        },
+        {
+          "nick": "F0R3VER",
+          "name": "Dias Kutubay",
+          "country": "Kazakhstan",
+          "role": "Rifler",
+          "joined": "March 12, 2026 (promoted from VP.Prodigy)"
+        }
+      ],
+      "coach": {
+        "nick": "ProbLeM",
+        "name": "Dmitriy Martinov",
+        "country": "Russia",
+        "joined": "March 2026 (rebuild)"
+      },
+      "season_2026": [
+        "Won the TWC Global Qualifier: lost opener 1-2 to K27, recovered (2-0 vs BESTIA, 2-0 vs K27), then eliminated FOKUS, HEROIC and HOTU (3-0 final; tO0RO 1.30 rating in the final)",
+        "Rebuilt around the VP.Prodigy academy core after the old five sank to ~#100-123 in the VRS; five-match win streak in September 2026"
+      ],
+      "key_changes": "Complete rebuild Feb-Mar 2026: Perfecto, FL1T, fame benched (FL1T → PARIVISION; fame later surfaced on 1win); academy duo promoted; mir returned as IGL.",
+      "sources": [
+        "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo",
+        "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+      ]
+    }
+  ],
+  "roster_changes_timeline": [
+    {
+      "date": "2025-04",
+      "team": "FURIA",
+      "change": "Context — the international pivot: molodoy (KZ) replaced chelo; YEKINDAR (LV) replaced skullz as a stand-in (later permanent); the core has been intact since, the most settled roster in the field",
+      "source": "https://www.hltv.org/news/41512/furia-bench-skullz-add-yekindar-as-stand-in"
+    },
+    {
+      "date": "2025-11",
+      "team": "9z",
+      "change": "Sign luchov and meyern (urban0 and levi benched)",
+      "source": "https://www.hltv.org/news/43643/dgt-returns-to-9z"
+    },
+    {
+      "date": "2026-01-06",
+      "team": "9z",
+      "change": "Luken departs (contract not renewed; joins Gaimin Gladiators)",
+      "source": "https://www.hltv.org/news/43581/luken-departs-9z"
+    },
+    {
+      "date": "2026-01-16",
+      "team": "9z",
+      "change": "dgt returns from paiN to complete the five",
+      "source": "https://www.hltv.org/news/43643/dgt-returns-to-9z"
+    },
+    {
+      "date": "2026-01-17",
+      "team": "BetBoom",
+      "change": "Ax1Le transfers to TDK (benched at BetBoom)",
+      "source": "https://www.hltv.org/team/12394/betboom"
+    },
+    {
+      "date": "2026-02",
+      "team": "Virtus.pro",
+      "change": "Perfecto, FL1T and fame benched/transfer-listed after the roster slid to ~#100–123 in the VRS",
+      "source": "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo"
+    },
+    {
+      "date": "2026-02-02",
+      "team": "Legacy",
+      "change": "lux benched (IGL, 13 months on roster)",
+      "source": "https://www.hltv.org/news/43796/official-legacy-bench-lux-reported-to-sign-art"
+    },
+    {
+      "date": "2026-02-03",
+      "team": "Legacy",
+      "change": "arT signed from Fluxo as new IGL",
+      "source": "https://www.hltv.org/news/43812/official-legacy-sign-art"
+    },
+    {
+      "date": "2026-03-12",
+      "team": "Virtus.pro",
+      "change": "Academy rebuild finalized: mir returns as IGL; b1st and tO0RO (VP.Prodigy) stay; AquaRS and F0R3VER promoted — the academy core's VRS points became VP's lifeline",
+      "source": "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo"
+    },
+    {
+      "date": "2026-03-23",
+      "team": "BetBoom",
+      "change": "FL4MUS (on loan from VP via OG) and zorte fielded as stand-ins due to d1Ledez visa issues",
+      "source": "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues"
+    },
+    {
+      "date": "2026-04-17",
+      "team": "FURIA",
+      "change": "FalleN announces retirement at end of 2026 (on stage at IEM Rio)",
+      "source": "https://www.dust2.us/news/72948/breaking-fallen-announces-retirement-on-stage-at-iem-rio"
+    },
+    {
+      "date": "2026-04-20",
+      "team": "Falcons",
+      "change": "kyxsan benched (after 3rd place at IEM Rio); karrigan signed from FaZe as IGL",
+      "source": "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing"
+    },
+    {
+      "date": "2026-06-17",
+      "team": "PARIVISION",
+      "change": "HObbit signed (stand-in)",
+      "source": "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit"
+    },
+    {
+      "date": "2026-06-29",
+      "team": "Aurora",
+      "change": "Coach Fabre benched",
+      "source": "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened"
+    },
+    {
+      "date": "2026-07-02",
+      "team": "Aurora",
+      "change": "MAJ3R steps down; soulfly benched; MOUZ and Jimpphat part ways",
+      "source": "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened"
+    },
+    {
+      "date": "2026-07-02",
+      "team": "BetBoom",
+      "change": "FL4MUS' loan ends — he had played IEM Atlanta and the entire Cologne Major campaign (5th–8th) as BetBoom's fifth, deputizing for visa-hit d1Ledez",
+      "source": "https://www.hltv.org/news/45019/short-news-week-26"
+    },
+    {
+      "date": "2026-07-03",
+      "team": "Aurora",
+      "change": "Jimpphat signed; ashhh named head coach",
+      "source": "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened"
+    },
+    {
+      "date": "2026-07-08",
+      "team": "Aurora",
+      "change": "kyxsan signed from Falcons bench — international rebuild complete",
+      "source": "https://www.strafe.com/news/read/aurora-locks-in-new-cs2-roster-with-kyxsan-and-jimpphat/"
+    },
+    {
+      "date": "2026-07-09",
+      "team": "Legacy",
+      "change": "n1ssim returns to active lineup (had requested a bench after the Cologne Major)",
+      "source": "https://www.hltv.org/news/45100/official-n1ssim-returns-to-legacys-active-lineup"
+    },
+    {
+      "date": "2026-07-10",
+      "team": "Imperial (SA circuit)",
+      "change": "Imperial sign saadzin from Legacy (levi benched) — part of the try trade",
+      "source": "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened"
+    },
+    {
+      "date": "2026-07-11",
+      "team": "Legacy",
+      "change": "try signed from Imperial (saadzin traded the other way)",
+      "source": "https://www.hltv.org/news/45114/official-legacy-sign-try"
+    },
+    {
+      "date": "2026-07-17",
+      "team": "BetBoom (via VP)",
+      "change": "FL4MUS joins GamerLegion permanently (bought from Virtus.pro); BetBoom's CEO had ruled out buying him (Jul 3) — Finals five confirmed: Boombl4, zorte, S1ren, d1Ledez, Magnojez",
+      "source": "https://www.hltv.org/news/45019/short-news-week-26"
+    },
+    {
+      "date": "2026-07-29",
+      "team": "PARIVISION",
+      "change": "FL1T signed from Virtus.pro bench, replacing HObbit; reunites with Jame & dastan (Rio Major 2022 core)",
+      "source": "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit"
+    },
+    {
+      "date": "2026-09-13",
+      "team": "Virtus.pro",
+      "change": "Won the TWC Global Qualifier (3–0 vs HOTU) for the eighth Finals spot — after losing the opener to K27 and winning five straight elimination-risk series (Sep 9–13)",
+      "source": "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/"
+    },
+    {
+      "date": "2026-09-16",
+      "team": "Tournament",
+      "change": "The 8-team Finals field announced: 7 VRS invites (Aug 3 snapshot) + Virtus.pro from the qualifier; four top-10 teams, with FURIA and Falcons the only top-five sides present",
+      "source": "https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list"
+    },
+    {
+      "date": "2026-09-17",
+      "team": "PARIVISION",
+      "change": "slaxejezzz benched; HObbit re-signed — 4 days after the TWC team list announcement",
+      "source": "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit"
+    }
+  ],
+  "irregularities": [
+    {
+      "issue": "Prize pool figures differ across sources",
+      "detail": "Official Thunderpick/PRNewswire: $1,115,000 total circuit with $1,000,000 for the Malta Finals. EGamersWorld/Strafe/escharts list the Finals at $500,000, and GosuGamers lists $615,000. The $500,000 figure may reflect only the club share of the $1M (HLTV splits it as $500k player share / $500k club share); GosuGamers' $615,000 matches no official figure.",
+      "resolution": "Site uses the official $1,000,000 Finals / $1,115,000 circuit figures."
+    },
+    {
+      "issue": "Venue naming",
+      "detail": "Official releases say 'BLAST Studios Malta' (one PR dateline: Ta' Qali). Liquipedia lists 'BLAST Arena Studios, Attard'. Some outlets wrote 'Valletta'. All refer to the same BLAST studio venue in Malta.",
+      "resolution": "Site uses 'BLAST Studios, Malta (Attard per Liquipedia)'."
+    },
+    {
+      "issue": "Early date plan superseded",
+      "detail": "HLTV's Dec 11, 2025 article said the LAN finals would be 'October 12-19'. Final official dates are October 14-18, 2026.",
+      "resolution": "Site uses Oct 14-18 (Liquipedia, HLTV event page, official PR)."
+    },
+    {
+      "issue": "Ranking confusion across outlets",
+      "detail": "PRNewswire (Sept 16) listed e.g. 'Legacy #3, Falcons #4, FURIA #8'; esportbet wrote 'Falcons #2, FURIA #4'. These mix ranking systems/dates (HLTV weekly vs Valve VRS snapshots vs HLTV's live Valve ranking). Example: Legacy is #6 on HLTV's Sept 21 ranking, #6 on Valve's Sept 7 VRS snapshot, but #2 on HLTV's live Valve ranking badge (Sept 23).",
+      "resolution": "Site always labels which system and which date: HLTV World Ranking (Sept 21) and Valve VRS official snapshots (Aug 3 invite basis; Sept 7 latest published)."
+    },
+    {
+      "issue": "VRS roster data lag",
+      "detail": "Valve's Aug 3 VRS snapshot lists rosters that were already outdated (FL4MUS on BetBoom, saadzin on Legacy, HObbit+slaxejezzz on PARIVISION). The TWC Finals rosters reflect the actual, current lineups.",
+      "resolution": "Roster-change timeline cross-references every discrepancy."
+    },
+    {
+      "issue": "Groups not yet drawn",
+      "detail": "As of Sept 23, 2026, both group placements and the match schedule for the Finals are TBD on Liquipedia and HLTV.",
+      "resolution": "Marked as pending; to be updated in a future session."
+    },
+    {
+      "issue": "No outright winner odds available at research time",
+      "detail": "esportbet's TWC page (the dedicated TWC betting hub) stated odds were not yet available as of the research date; Thunderpick (title sponsor) will offer markets per their official site.",
+      "resolution": "Betting guide provides verified form/H2H data and a framework instead of live odds; links provided for manual odds checks."
+    },
+    {
+      "issue": "IGL labels (minor)",
+      "detail": "9z's and PARIVISION's official in-game-leader designations are not explicitly stated in the sources gathered (max and Jame are the veteran leaders historically associated with calling)",
+      "resolution": "Explicitly labeled 'not officially labeled' on the Players page rather than asserted"
+    }
+  ],
+  "limitations": [
+    "Match/outright odds for TWC 2026 were not yet published at research time (Sept 23, 2026) — betting analysis is framework + verified form data, not live prices.",
+    "Group draw and day-by-day schedule for the Finals are not yet published.",
+    "HLTV player statistics for the Finals will only exist after the event; linked for post-event review.",
+    "Head-to-head data covers documented 2026 meetings only; full H2H scraping (all pairings, all maps) is future work.",
+    "Some primary sources are X/Twitter posts (e.g., PARIVISION announcements) which may require login to view.",
+    "Rankings move weekly (HLTV) and per-snapshot (Valve); this site pins exact dates for every ranking figure.",
+    "Roster news after Sept 23, 2026 is not captured and should be added in a follow-up pass before the event (Oct 14-18)."
+  ]
+}
