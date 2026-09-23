@@ -10,6 +10,7 @@ A verified, source-linked knowledge base for the tournament, aimed at readers wh
 
 - **Tournament overview** — dates, format, prize distribution, circuit (regional series + qualifier), map pool, broadcast
 - **Teams & full rosters** — the 8 finalists, 40 players + 8 coaches, ranks pinned to exact dates, bench/reserve status
+- **Stats & form** — dated VRS/HLTV snapshots and recent form signals, with a hard boundary around unavailable event stats
 - **Roster change tracker** — every verified transfer/benching/signing affecting the field, with dates, sources and impact notes
 - **Betting guide** — format implications for markets, favorites/dark horses with verified form data, risk register (educational; no odds are invented)
 - **CS2 universe guide** — game rules, ecosystem (VRS, Majors, tiers), 2026 meta and map pool
@@ -17,7 +18,7 @@ A verified, source-linked knowledge base for the tournament, aimed at readers wh
 
 ## The no-hallucination rule
 
-Every factual claim on the site links to at least one public source (HLTV, Liquipedia, Valve's official VRS GitHub, official press releases, reputable specialist press) for manual review. Where sources disagree, the conflict is **flagged, not smoothed over** — see the [Irregularities section](docs/master-list.html) of the master list.
+Every factual claim on the site links to at least one public source (HLTV, Liquipedia, Valve's official VRS GitHub, official press releases, reputable specialist press) for manual review. Where sources disagree, the conflict is **flagged, not smoothed over** — see the [Irregularities section](master-list.html) of the master list.
 
 Key verification anchors:
 
@@ -36,12 +37,16 @@ Key verification anchors:
 ├── README.md                  ← this file
 ├── .nojekyll                  ← tells GitHub Pages to serve files verbatim
 ├── data/
-│   └── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
+│   ├── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
+│   └── research-ledger.json   ← exactly 20 dated research entries and source links
+├── scripts/
+│   └── verify_site.py         ← zero-dependency local integrity check
 ├── assets/
 │   └── style.css              ← design system (no JS dependencies)
 ├── index.html                 ← tournament overview          (GitHub Pages serves
 ├── teams.html                 ← the 8 teams & rosters          this repo root as
 ├── players.html               ← all players & coaches          the website)
+├── stats.html                 ← pre-event stats & form signals
 ├── roster-changes.html        ← change tracker / timeline
 ├── betting-guide.html         ← betting framework (educational)
 ├── cs2-guide.html             ← Counter-Strike 2 primer
@@ -68,7 +73,9 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 
 ## Updating the site
 
-Edit the HTML files in `docs/` (and mirror structural data changes into `data/twc2026.json`), commit to a branch, open a PR, and merge — GitHub Pages rebuilds automatically from `main` / `docs`.
+Run `python3 scripts/verify_site.py` before publishing. It checks the eight-team/roster shape, the 20-entry ledger, reserve fields and local links; it does not replace manual review of remote sources.
+
+Edit the root HTML files (and mirror structural data changes into `data/twc2026.json` and `data/research-ledger.json`), commit to a branch, open a PR, and merge — GitHub Pages serves the repository root from `main` (`.nojekyll` is present).
 
 ## Disclaimer
 

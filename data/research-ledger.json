@@ -1,0 +1,220 @@
+{
+  "title": "TWC 2026 research ledger",
+  "purpose": "Twenty pre-event research entries checked against public sources before being published. This is a dated snapshot, not a live feed.",
+  "reviewed_as_of": "2026-09-23",
+  "method": "Each claim was checked against the linked source text or structured record. A source is not treated as proof of a stronger claim than it states. Conflicts, moving rankings and unavailable event statistics remain flagged on the site.",
+  "entries": [
+    {
+      "id": 1,
+      "claim": "The TWC 2026 Finals are scheduled for October 14–18, 2026 at BLAST Studios Malta with a $1,000,000 Finals prize pool.",
+      "detail": "The event is the fourth edition; GAM3RS_X is the organizer and GRID is the data partner.",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/",
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 2,
+      "claim": "The full 2026 circuit is advertised at $1,115,000 and consists of five regional online series, a Global Qualifier and the Finals.",
+      "detail": "The published series amounts are EU1 $30,000, EU2 $30,000, NA $15,000, SA1 $20,000 and SA2 $20,000, plus the $1,000,000 Finals.",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/",
+        "https://www.hltv.org/news/43425/thunderpick-world-championship-2026-additional-information-revealed"
+      ]
+    },
+    {
+      "id": 3,
+      "claim": "The Finals format is two four-team GSL groups with Bo3 matches, followed by a single-elimination playoff; the Grand Final is Bo5 and a third-place decider is listed.",
+      "detail": "The event page lists a $500,000 player share and a $500,000 club share. It does not mean the Finals prize pool is $500,000.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026",
+        "https://www.hotspawn.com/counter-strike/tournament/thunderpick-world-championship-2026-2"
+      ]
+    },
+    {
+      "id": 4,
+      "claim": "The eight-team Finals field was announced on September 16, 2026: Falcons, 9z, Legacy, FURIA, BETBOOM, Aurora, PARIVISION and Virtus.pro.",
+      "detail": "The first seven entered through the VRS invite route; Virtus.pro entered through the closed qualifier.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list",
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026"
+      ]
+    },
+    {
+      "id": 5,
+      "claim": "The direct-invite basis is Valve's official Global VRS snapshot dated August 3, 2026.",
+      "detail": "At that snapshot the Finals teams were Falcons #2, 9z #4, Legacy #7, FURIA #8, BetBoom #9, Aurora #10, PARIVISION #12 and Virtus.pro #37.",
+      "status": "verified",
+      "sources": [
+        "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_08_03.md",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026"
+      ]
+    },
+    {
+      "id": 6,
+      "claim": "Virtus.pro won the September 9–13 Global Qualifier and took the last Finals place.",
+      "detail": "VP lost the opener to K27, then recovered through BESTIA, a K27 rematch and playoff wins over FOKUS, HEROIC and HOTU. The Grand Final against HOTU was a 3–0 Bo5, with maps Dust II 16–14, Anubis 13–6 and Ancient 16–13; the linked coverage and match record agree.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45514/virtuspro-enter-top-30-of-vrs-with-thunderpick-world-championship-qualification",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier",
+        "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Qualifier"
+      ]
+    },
+    {
+      "id": 7,
+      "claim": "Falcons replaced benched IGL kyxsan with karrigan from FaZe on April 20, 2026.",
+      "detail": "HLTV says karrigan reunited with NiKo and coach zonic and took over leadership after Falcons placed third at IEM Rio.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing"
+      ]
+    },
+    {
+      "id": 8,
+      "claim": "Falcons won IEM Cologne Major 2026 3–0 over FURIA; m0NESY received the ESL Pro Tour DHL MVP award.",
+      "detail": "ESL's official release also reports the event's viewership record and Falcons' first Major title. The record claim is kept separate from performance analysis.",
+      "status": "verified",
+      "sources": [
+        "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/",
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+      ]
+    },
+    {
+      "id": 9,
+      "claim": "FalleN announced on the IEM Rio stage that he plans to retire at the end of 2026.",
+      "detail": "This is a reported player statement and a tournament storyline, not a claim that he will leave FURIA before TWC.",
+      "status": "verified",
+      "sources": [
+        "https://www.dust2.us/news/72948/breaking-fallen-announces-retirement-on-stage-at-iem-rio",
+        "https://bo3.gg/news/fallen-announces-retirement-at-the-end-of-2026"
+      ]
+    },
+    {
+      "id": 10,
+      "claim": "molodoy was ranked sixth in HLTV's 2025 top-20 and named Rookie of the Year.",
+      "detail": "This is historical player context; it is not a TWC 2026 event statistic.",
+      "status": "verified",
+      "sources": [
+        "https://esports-news.co.uk/2026/01/12/hltv-awards-all-winners-cs2-2025/",
+        "https://liquipedia.net/counterstrike/Molodoy"
+      ]
+    },
+    {
+      "id": 11,
+      "claim": "Legacy replaced lux with arT in early February 2026.",
+      "detail": "HLTV reports the benching on February 2 and arT's signing from Fluxo on February 3; the site's claim is limited to those roster actions.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/43796/official-legacy-bench-lux-reported-to-sign-art",
+        "https://www.hltv.org/news/43812/official-legacy-sign-art"
+      ]
+    },
+    {
+      "id": 12,
+      "claim": "Legacy signed try from Imperial in July 2026, with saadzin moving the other way; n1ssim also returned to the active lineup.",
+      "detail": "The two transactions are separate HLTV reports and are not combined into a claim about tactical quality.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45114/official-legacy-sign-try",
+        "https://www.hltv.org/news/45100/official-n1ssim-returns-to-legacys-active-lineup"
+      ]
+    },
+    {
+      "id": 13,
+      "claim": "Legacy won FISSURE Playground 3 on September 13, 2026 with a 3–0 final against G2; latto was the final's MVP.",
+      "detail": "HLTV reports latto's final line as 69–34, 102.9 ADR, 80.6% KAST and 1.67 Rating 3.0. This is a single final, not a season average.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45509/legacy-sweep-g2-to-lift-fissure-playground-3-trophy",
+        "https://escharts.com/tournaments/csgo/fissure-playground-3"
+      ]
+    },
+    {
+      "id": 14,
+      "claim": "Aurora's current Finals five followed a July 2026 rebuild: kyxsan, XANTARES, woxic, Wicadia and Jimpphat, coached by ash/ashhh in the linked reports.",
+      "detail": "The roster turnover and dates are sourced; labels such as 'favorite' or 'new-coach bounce' remain analysis, not facts.",
+      "status": "verified",
+      "sources": [
+        "https://www.strafe.com/news/read/aurora-locks-in-new-cs2-roster-with-kyxsan-and-jimpphat/",
+        "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 15,
+      "claim": "9z's current five is max, dgt, meyern, luchov and HUASOPEEK; the August 3 VRS snapshot had 9z fourth globally.",
+      "detail": "The roster history includes luchov and meyern joining, Luken leaving and dgt returning. HLTV's September 21 ranking is a separate snapshot and places 9z #16.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/43643/dgt-returns-to-9z",
+        "https://www.hltv.org/news/43581/luken-departs-9z",
+        "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_08_03.md",
+        "https://www.hltv.org/ranking/teams/2026/september/21"
+      ]
+    },
+    {
+      "id": 16,
+      "claim": "BetBoom's Finals five is Boombl4, zorte, S1ren, d1Ledez and Magnojez after the FL4MUS loan/stand-in period ended.",
+      "detail": "The site distinguishes a temporary LAN stand-in from the registered Finals roster; a visa problem in spring 2026 is not evidence of a current problem.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues",
+        "https://www.hltv.org/news/45019/short-news-week-26",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 17,
+      "claim": "PARIVISION's last pre-event move was to bench slaxejezzz and return HObbit to the active lineup on September 17, 2026; FL1T remains in the five.",
+      "detail": "This change happened after the eight-team announcement. HObbit's original stand-in spell and FL1T's July replacement are recorded as separate changes.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit",
+        "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit",
+        "https://x.com/parivisiongg/status/2100555617832149185"
+      ]
+    },
+    {
+      "id": 18,
+      "claim": "Virtus.pro completed a 2026 rebuild with mir, b1st, F0R3VER, AquaRS and tO0RO, coached by ProbLeM.",
+      "detail": "HLTV reports Perfecto, FL1T and fame being removed from the active roster and the academy promotions of AquaRS and F0R3VER after mir's return.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo",
+        "https://www.hltv.org/news/45514/virtuspro-enter-top-30-of-vrs-with-thunderpick-world-championship-qualification",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 19,
+      "claim": "Valve's July 8, 2026 update added Cache to the Active Duty map pool and removed Overpass; TWC's event page lists Cache, Dust II, Mirage, Inferno, Nuke, Ancient and Anubis.",
+      "detail": "The official update is the date authority. Third-party July 6 publication dates are flagged rather than used.",
+      "status": "verified",
+      "sources": [
+        "https://www.counter-strike.net/news/updates",
+        "https://www.counter-strike.net/news",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 20,
+      "claim": "TWC sits in the run-up to the PGL Major Singapore 2026, listed for November 25–December 13 with 32 teams and a $1.25 million prize pool.",
+      "detail": "The Singapore venue page is an external event listing; the VRS cutoff and invitations can change, so this is context rather than a qualification guarantee for any TWC team.",
+      "status": "verified",
+      "sources": [
+        "https://www.thekallang.com.sg/en/things-to-do/events/pgl-major-singapore-2026.html",
+        "https://liquipedia.net/counterstrike/PGL/2026/Singapore",
+        "https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list"
+      ]
+    }
+  ]
+}
