@@ -36,8 +36,8 @@ def main() -> None:
 
     entries = ledger.get("entries", [])
     ids = [entry.get("id") for entry in entries]
-    if ids != list(range(1, 81)):
-        fail(f"research ledger must contain IDs 1..80 in order (four passes), found {ids}")
+    if ids != list(range(1, 101)):
+        fail(f"research ledger must contain IDs 1..100 in order (five passes), found {ids}")
     if any(entry.get("status") != "verified" for entry in entries):
         fail("every research-ledger entry must have status=verified after review")
     if any(not entry.get("sources") for entry in entries):
@@ -78,8 +78,26 @@ def main() -> None:
     cal4 = data.get("tournament", {}).get("pre_event_calendar", {})
     if "pgl_masters_bucharest" not in cal4:
         fail("tournament.pre_event_calendar missing 'pgl_masters_bucharest'")
-    if len(data.get("irregularities", [])) < 19:
-        fail("expected at least 19 flagged irregularities after the fourth pass")
+    if len(data.get("irregularities", [])) < 20:
+        fail("expected at least 20 flagged irregularities after the fifth pass")
+    # Fifth-pass data shape checks (map-pool block, 2027 horizon, FPG3 calendar).
+    maps = data.get("map_pool_win_rates", {})
+    for key in ("window", "note", "teams", "sources"):
+        if key not in maps:
+            fail(f"map_pool_win_rates missing '{key}'")
+    if len(maps.get("teams", {})) != 8:
+        fail("map_pool_win_rates must cover all eight teams")
+    if any(len(v) != 7 for v in maps.get("teams", {}).values()):
+        fail("map_pool_win_rates must list all seven Active Duty maps per team")
+    horizon = data.get("horizon_2027", {})
+    for key in ("majors", "esports_world_cup_2027", "sources"):
+        if key not in horizon:
+            fail(f"horizon_2027 missing '{key}'")
+    cal5 = data.get("tournament", {}).get("pre_event_calendar", {})
+    if "fissure_playground_3" not in cal5:
+        fail("tournament.pre_event_calendar missing 'fissure_playground_3'")
+    if len(data.get("roster_changes_timeline", [])) < 45:
+        fail("roster timeline must keep all pass 1-5 rows (expected >= 45)")
     rows = [(c["date"], c["team"], c["change"]) for c in data.get("roster_changes_timeline", [])]
     if len(rows) != len(set(rows)):
         fail("roster timeline contains duplicate rows")
@@ -90,7 +108,9 @@ def main() -> None:
     master = (ROOT / "master-list.html").read_text(encoding="utf-8")
     for probe in ("Entries 21–40", "DragonClaw", "MR12", "Entries 41–60", "StarSeries",
                   "12,500", "Schengen", "Pro League", "Entries 61–80", "Global Qualifier",
-                  "MongolZ", "Bucharest", "device", "80-entry ledger"):
+                  "MongolZ", "Bucharest", "device",
+                  "Entries 81–100", "molodoy", "Map-pool profiles", "BC.Game",
+                  "Shanghai", "100-entry ledger", "Complexity"):
         if probe not in master:
             fail(f"master-list.html is missing pass 2-4 content ({probe!r})")
     section = master.split('id="entries-41-60"', 1)
@@ -103,10 +123,33 @@ def main() -> None:
     section4 = master.split('id="entries-61-80"', 1)
     if len(section4) != 2:
         fail("master-list.html lacks the entries-61-80 section")
-    body4 = section4[1].split('id="irregularities"', 1)[0]
+    body4 = section4[1].split('id="entries-81-100"', 1)[0]
     shown4 = [int(n) for n in re.findall(r'<td class="num">(\d+)</td>', body4)]
     if shown4 != list(range(61, 81)):
         fail(f"entries 61-80 table must list IDs 61..80 in order, found {shown4}")
+    section5 = master.split('id="entries-81-100"', 1)
+    if len(section5) != 2:
+        fail("master-list.html lacks the entries-81-100 section")
+    body5 = section5[1].split('id="irregularities"', 1)[0]
+    shown5 = [int(n) for n in re.findall(r'<td class="num">(\d+)</td>', body5)]
+    if shown5 != list(range(81, 101)):
+        fail(f"entries 81-100 table must list IDs 81..100 in order, found {shown5}")
+
+    # Fifth-pass content must be mirrored on the subpages.
+    page_probes = {
+        "stats.html": ('id="map-pool"', "Map-pool profiles"),
+        "roster-changes.html": ("INJURY WATCH", "Eternal Fire head coach"),
+        "teams.html": ("FISSURE Playground 3 quarter-final exit", "first big international LAN since IEM Chengdu 2025"),
+        "players.html": ("KSCERATO", "n1ssim"),
+        "betting-guide.html": ("stats.html#map-pool", "molodoy"),
+        "cs2-guide.html": ("Shanghai", "Asia VRS region"),
+        "index.html": ("fifth pass", "FISSURE Playground 3"),
+    }
+    for page_name, probes in page_probes.items():
+        html = (ROOT / page_name).read_text(encoding="utf-8")
+        for probe in probes:
+            if probe not in html:
+                fail(f"{page_name} is missing pass-5 content ({probe!r})")
 
     # Retired claims must not reappear anywhere (corrected in pass 3).
     for page in ROOT.glob("*.html"):
@@ -132,9 +175,9 @@ def main() -> None:
     if local_link_errors:
         fail("broken local links: " + ", ".join(local_link_errors))
 
-    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 80 verified ledger entries, "
-          "ranking/schedule/rules/calendar/GQ blocks, entries 41-60 and 61-80 mirrored, "
-          "retired claims absent, local links + anchors")
+    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 100 verified ledger entries, "
+          "ranking/schedule/rules/calendar/GQ/map-pool/horizon blocks, entries 41-60, 61-80 and 81-100 mirrored, "
+          "pass-5 subpage mirrors, 20 irregularities, retired claims absent, local links + anchors")
 
 
 if __name__ == "__main__":

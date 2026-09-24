@@ -5,7 +5,7 @@
     "verification_method": "Each published claim is checked against the linked public source text or structured record. Source conflicts, moving rankings and unavailable pre-event statistics are kept visible; see data/research-ledger.json and the Verified List page.",
     "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant.",
     "research_ledger": "data/research-ledger.json",
-    "verification_passes": "Four passes of 20 new ledger entries each: first build and entries 1-20 on Sept 23, 2026 (pass 2, entries 21-40, same day); pass 3 (entries 41-60) and pass 4 (entries 61-80) on Sept 24, 2026. Pass 4 added the Global Qualifier deep-dive, the official-page contradiction, field absences, The MongolZ crisis, PGL Masters Bucharest and the \"final VRS opportunity\" conflict, EPL S24 field checks, odds status, prize-share columns and sponsor/source-independence notes. Ledger: data/research-ledger.json (80 entries)."
+    "verification_passes": "Five passes of 20 new ledger entries each: first build and entries 1-20 on Sept 23, 2026 (pass 2, entries 21-40, same day); pass 3 (entries 41-60) and pass 4 (entries 61-80) on Sept 24, 2026; pass 5 (entries 81-100) on Sept 24, 2026. Pass 4 added the Global Qualifier deep-dive, field absences, The MongolZ crisis, PGL Masters Bucharest and the odds status. Pass 5 added FISSURE Playground 3 results and interviews, molodoy's eye condition, StarSeries MVP/EVPs, the completed Bucharest qualifier field, the 2027 Major/EWC calendar, the Americas VRS race, the Complexity/ODDIK org closures, Virtus.pro's VRS trajectory and 3-month map-pool win rates for all eight teams. Ledger: data/research-ledger.json (100 entries)."
   },
   "tournament": {
     "name": "Thunderpick World Championship 2026 (TWC 2026)",
@@ -110,14 +110,21 @@
       "pgl_masters_bucharest": {
         "dates": "October 24-31, 2026",
         "what": "PGL Masters Bucharest: 16 teams, $1,250,000 (50/50 player/club), PGL Studio Bucharest; Bo3 Swiss into single-elim playoffs, Bo5 final; Valve Tier 1",
-        "why_it_matters": "Last Tier-1 stop before the Nov 2 VRS cutoff (Major invites). Invites from the July 6 VRS; main-event seeding uses the October 5 VRS snapshot - the one TWC results can move. Five TWC teams are in the announced field (FURIA, Legacy, Aurora, 9z, BetBoom); Falcons were the only top team to skip the invite round.",
+        "why_it_matters": "Last Tier-1 stop before the Nov 2 VRS cutoff (Major invites). Invites from the July 6 VRS; main-event seeding uses the October 5 VRS snapshot - the one TWC results can move. Five TWC teams are in the announced field (FURIA, Legacy, Aurora, 9z, BetBoom); Falcons were the only top team to skip the invite round. The 16-team field was completed on Sept 13: Nemiga, DENDELE, Liquid and TYLOO won the qualifiers (entry 93), joining the five TWC teams (FURIA, Legacy, Aurora, 9z, BetBoom) plus Spirit, MOUZ, Vitality, FUT, G2, NAVI and The MongolZ.",
         "sources": [
           "https://liquipedia.net/counterstrike/PGL/2026/Masters",
           "https://www.talkesport.com/news/cs2/pgl-bucharest-masters-2026/",
           "https://www.shanethegamer.com/esports-news/pgl-masters-bucharest-2026-cs2/",
           "https://egamersworld.com/counterstrike/event/pgl-masters-bucharest-2026-thkIFvyQ2",
-          "https://www.hltv.org/news/45146/falcons-the-only-top-team-to-skip-pgl-masters-bucharest-as-invites-are-announced"
+          "https://www.hltv.org/news/45146/falcons-the-only-top-team-to-skip-pgl-masters-bucharest-as-invites-are-announced",
+          "https://www.hltv.org/news/45513/liquid-tyloo-dendele-and-nemiga-qualify-for-pgl-masters-bucharest"
         ]
+      },
+      "fissure_playground_3": {
+        "dates": "Sept 8-13, 2026 (Suzhou, China; $1,000,000; 16 teams)",
+        "twc_teams": "Legacy champions (3-0 vs G2; latto MVP), BetBoom 3rd-4th, FURIA 5th-6th (0-2 vs G2), 9z and PARIVISION 9th-12th; Falcons, Aurora and Virtus.pro did not attend",
+        "why_it_matters": "Last completed Tier-1 event with Finals teams before TWC; FURIA's OT loss to G2 (11-7 lead lost) extended the 'labored season' narrative, Legacy banked their third straight Chinese title, and BetBoom swept a group containing Astralis and MIBR. EVPs: n1ssim, NertZ, nqz.",
+        "source": "https://www.hltv.org/events/8266/fissure-playground-3"
       }
     },
     "global_qualifier": {
@@ -278,7 +285,7 @@
       "source": "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_08_03.md"
     },
     "hltv_live_valve_ranking_2026_09_23": {
-      "note": "HLTV's continuously-updated live implementation of the Valve ranking, read from each team's badge on the TWC 2026 event page on Sept 23, 2026. Differs from Valve's last published snapshot (Sept 7) because it includes results after that date (e.g., Legacy's FISSURE Playground 3 title).",
+      "note": "HLTV's continuously-updated live implementation of the Valve ranking, read from each team's badge on the TWC 2026 event page on Sept 23, 2026. Differs from Valve's last published snapshot (Sept 7) because it includes results after that date (e.g., Legacy's FISSURE Playground 3 title). Re-checked from the same page on Sept 24, 2026 (pass 5): identical except Virtus.pro, whose live badge read #44 - live ranks move continuously; the site pins all figures to their read date.",
       "twc_teams": {
         "Legacy": 2,
         "Falcons": 5,
@@ -424,7 +431,10 @@
         "IEM Cologne Major 2026 runners-up (0-3 vs Falcons); beat Aurora 2-0 in semifinal, 9z 2-1 in quarterfinal",
         "Defending Thunderpick World Championship champions (2025: reverse sweep 3-2 vs NAVI in Malta)",
         "molodoy: HLTV #6 player of 2025 + HLTV Rookie of the Year 2025; FURIA ended 2025 #1 in VRS Global",
-        "StarSeries Fall 2026: 3rd (0-4 on maps vs Vitality); Sept 17: YEKINDAR handed T-side calling on Anubis/Cache/Ancient back to FalleN"
+        "StarSeries Fall 2026: 3rd (0-4 on maps vs Vitality); Sept 17: YEKINDAR handed T-side calling on Anubis/Cache/Ancient back to FalleN",
+        "FISSURE Playground 3 (Sept 8-13): quarter-final exit, 5th-6th (0-2 vs G2; 14-16 OT Ancient after leading 11-7); FalleN: 'I know it's coming to an end, and I want to make the most of it'",
+        "Grand finals in 2026: IEM Krakow and the IEM Cologne Major - both lost; YEKINDAR (Sept 16) calls the season 'labored': 'we're just failing as a team' (no internal conflict)",
+        "molodoy is playing through an eye condition that requires surgery (pressure behind the eyes causing migraines; surgery planned in Kazakhstan - Sept 20 StarLadder broadcast); KSCERATO was StarSeries Fall's top EVP (1.26, 89.9 ADR; 4th straight event above 1.20)"
       ],
       "key_changes": "No roster changes since April 2025. FalleN announced on April 17, 2026 (IEM Rio stage) that he will retire at the end of 2026 — TWC is one of his final events.",
       "sources": [
@@ -501,7 +511,8 @@
         "FISSURE Playground 3 champions (Sept 13, 2026: 3-0 vs G2 in Suzhou, China; latto MVP with 1.67 rating in the final)",
         "Third consecutive title in China (CAC 2025, CAC 2026, FISSURE Playground 3); latto is a 3-time MVP, all in China",
         "12th-14th at the IEM Cologne Major; semis of FISSURE PG3 included a 2-1 win over MIBR and a win over FURIA in the event",
-        "BLAST Open Porto 2026: out in the groups (1-2 vs Vitality), two weeks before winning FISSURE Playground 3"
+        "BLAST Open Porto 2026: out in the groups (1-2 vs Vitality), two weeks before winning FISSURE Playground 3",
+        "n1ssim earned an FPG3 EVP (1.20 rating; in the MVP race before the final) - the player who had benched himself in the summer and returned only after Legacy failed to replace him; latto (2 MVPs + 2 EVPs in 2026) targets a first HLTV Top 20 after finishing Top 30 for 2025"
       ],
       "key_changes": "lux benched (Feb 2) → arT signed (Feb 3); saadzin traded to Imperial → try signed (July 11) after n1ssim briefly requested a bench and returned (July 9).",
       "sources": [
@@ -575,7 +586,8 @@
       "season_2026": [
         "IEM Cologne Major 2026 semifinalists (top-4; lost 0-2 to FURIA)",
         "Roster went fully international in a six-day July rebuild: coach Fabre benched (Jun 29), MAJ3R stepped down & soulfly benched (Jul 2), Jimpphat + ashhh (Jul 3), kyxsan (Jul 8)",
-        "StarSeries Fall 2026: 2nd (beat Vitality 2-1 in the upper final, lost the GF 1-3)"
+        "StarSeries Fall 2026: 2nd (beat Vitality 2-1 in the upper final, lost the GF 1-3)",
+        "Jimpphat: StarSeries Fall EVP (first since IEM Rio 2024; series-high 1.36 in the upper-final win over Vitality, 1.41 rating in map wins pre-final): 'Recently I've just had such a crazy amount of confidence'"
       ],
       "key_changes": "Complete identity change in July 2026 — from all-Turkish to international with a new IGL and coach, ~13 days before their first event (BLAST Bounty Season 2).",
       "sources": [
@@ -597,7 +609,7 @@
         },
         {
           "nick": "Fabre",
-          "status": "benched June 29, 2026",
+          "status": "benched June 29, 2026; appointed Eternal Fire head coach Sept 11, 2026",
           "role": "coach"
         }
       ]
@@ -654,7 +666,8 @@
       },
       "season_2026": [
         "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost 1-2 to FURIA in an all-Latin-American quarterfinal)",
-        "Rose to #4 in the world on the Aug 3, 2026 VRS snapshot — a remarkable climb for a roster almost fully rebuilt in Nov 2025-Jan 2026"
+        "Rose to #4 in the world on the Aug 3, 2026 VRS snapshot — a remarkable climb for a roster almost fully rebuilt in Nov 2025-Jan 2026",
+        "FISSURE Playground 3: 9th-12th (1-2 vs G2 in the elimination match: won Dust2 13-11, lost Ancient 8-13 and Inferno 10-13)"
       ],
       "key_changes": "Three changes in ~2 months: luchov + meyern in (Nov 2025), Luken out (Jan 6, 2026), dgt back (Jan 16, 2026).",
       "sources": [
@@ -732,7 +745,8 @@
       },
       "season_2026": [
         "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost to Aurora); 4th at IEM Atlanta",
-        "The fifth slot changed by event: FL4MUS (loan from Virtus.pro) replaced d1Ledez at IEM Atlanta; at the Cologne Major S1ren was absent and FL4MUS played alongside d1Ledez (Valve VRS match data). The loan ended July 2 and FL4MUS joined GamerLegion."
+        "The fifth slot changed by event: FL4MUS (loan from Virtus.pro) replaced d1Ledez at IEM Atlanta; at the Cologne Major S1ren was absent and FL4MUS played alongside d1Ledez (Valve VRS match data). The loan ended July 2 and FL4MUS joined GamerLegion.",
+        "FISSURE Playground 3: 3rd-4th (topped the group 3-0 incl. the org's first win over the Astralis tag; lost the semi 1-2 to G2). S1ren called it 'a ramp-up' for the ~20-day Europe trip (EPL S24 - TWC - Bucharest)"
       ],
       "key_changes": "The core is stable. The rotating fifth (FL4MUS loan, ended July 2026) is resolved; the settled Boombl4-zorte-S1ren-d1Ledez-Magnojez five has only played together since July 1, 2026.",
       "sources": [
@@ -812,7 +826,8 @@
       },
       "season_2026": [
         "15th-16th at the IEM Cologne Major",
-        "The HObbit saga: signed June 17 → replaced by FL1T on July 29 → re-signed September 17 to replace benched slaxejezzz (coach dastan said at EWC he believes HObbit is currently stronger than slaxejezzz)"
+        "The HObbit saga: signed June 17 → replaced by FL1T on July 29 → re-signed September 17 to replace benched slaxejezzz (coach dastan said at EWC he believes HObbit is currently stronger than slaxejezzz)",
+        "FISSURE Playground 3: 9th-12th (0-2 vs magic; Inferno lost 14-16 in OT after leading 12-6) - HLTV: 'continuing their slide down the rankings'"
       ],
       "key_changes": "Two new players (FL1T, HObbit) in the two months before the Finals — the least settled roster in the field.",
       "sources": [
@@ -890,7 +905,8 @@
       },
       "season_2026": [
         "Won the TWC Global Qualifier: lost opener 1-2 to K27, recovered (2-0 vs BESTIA, 2-0 vs K27), then eliminated FOKUS, HEROIC and HOTU (3-0 final; tO0RO 1.30 rating in the final)",
-        "Rebuilt around the VP.Prodigy academy core after the old five sank to ~#100-123 in the VRS; five-match win streak in September 2026"
+        "Rebuilt around the VP.Prodigy academy core after the old five sank to ~#100-123 in the VRS; five-match win streak in September 2026",
+        "TWC will be VP's first big international LAN since IEM Chengdu 2025 (only b1st and tO0RO remain from that roster); the GQ title lifted them into the VRS top 30 (Sept 16 HLTV) from below #100 pre-rebuild, giving them 'a slim chance to qualify for the Singapore Major'"
       ],
       "key_changes": "Complete rebuild Feb-Mar 2026: Perfecto, FL1T, fame benched (FL1T → PARIVISION; fame to 1win on Aug 1, 2026); academy duo promoted; mir returned as IGL.",
       "sources": [
@@ -1124,6 +1140,18 @@
       "source": "https://www.hltv.org/news/45270/esl-pro-league-s24-invites-announced"
     },
     {
+      "date": "2026-09-11",
+      "team": "Aurora",
+      "change": "Ex-coach Fabre (benched June 29) appointed Eternal Fire head coach - reunites with jottAAA and soulfly at the rebuilt international EF (#67 VRS)",
+      "source": "https://www.hltv.org/news/45503/fabre-returns-to-eternal-fire"
+    },
+    {
+      "date": "2026-09-13",
+      "team": "Legacy / BetBoom / FURIA / 9z / PARIVISION",
+      "change": "FISSURE Playground 3 (Suzhou, Sept 8-13): Legacy champions (3-0 vs G2, latto MVP 1.67 in the final); BetBoom 3rd-4th; FURIA 5th-6th (0-2 vs G2); 9z and PARIVISION 9th-12th",
+      "source": "https://www.hltv.org/events/8266/fissure-playground-3"
+    },
+    {
       "date": "2026-09-13",
       "team": "Virtus.pro",
       "change": "Won the TWC Global Qualifier (3–0 vs HOTU) for the eighth Finals spot — after losing the opener to K27 and winning five straight elimination-risk series (Sep 9–13)",
@@ -1155,15 +1183,33 @@
     },
     {
       "date": "2026-09-20",
+      "team": "FURIA",
+      "change": "molodoy's eye condition: needs surgery (pressure behind the eyes causing migraines; tablets ineffective; surgery planned in Kazakhstan) - KSCERATO's StarSeries top-EVP load 'There is more pressure on KSCERATO to deliver'",
+      "source": "https://www.hltv.org/news/45564/the-evps-and-all-stars-of-starladder-starseries-fall-2026"
+    },
+    {
+      "date": "2026-09-20",
       "team": "Aurora / FURIA",
       "change": "StarSeries Fall: Aurora 2nd (1-3 vs Vitality in the GF), FURIA 3rd; the last event before EPL S24",
       "source": "https://www.hltv.org/news/45558/vitality-beat-aurora-at-starseries-fall-for-first-title-since-may"
     },
     {
       "date": "2026-09-22",
+      "team": "Ecosystem",
+      "change": "BC.Game bench electroNic, sign asap (ex-THUNDER dOWNUNDER) and switch from the Europe VRS (36th) to the Asia VRS (1,191 pts would rank 4th; 5 Asian invites) - s1mple, Magisk, Senzu, mzinho project coached by TaZ",
+      "source": "https://www.hltv.org/news/45566/official-bcgame-add-asap"
+    },
+    {
+      "date": "2026-09-22",
       "team": "All teams",
       "change": "CS2 update: silent reload, silent unscope, Ancient/Cache/Mirage map fixes, new default crosshair",
       "source": "https://www.hltv.org/news/45567/silent-reload-mechanic-arrives-in-new-cs-update"
+    },
+    {
+      "date": "2026-09-23",
+      "team": "Ecosystem",
+      "change": "Complexity cease operations (Jason Lake departs after 23 years; brand reverts to GameSquare) and ODDIK pause operations indefinitely - two org-level contractions in one day around the TWC scene",
+      "source": "https://www.hltv.org/news/45568/complexity-ceases-operations-and-jason-lake-departs-after-23-years"
     }
   ],
   "irregularities": [
@@ -1261,15 +1307,129 @@
       "issue": "'Final VRS opportunity' claim conflicts with PGL Masters Bucharest",
       "detail": "esportbet (Sept 16) called TWC 'the final opportunity for participating teams to secure VRS points ahead of the Singapore Major'. But PGL Masters Bucharest (Oct 24-31) ends before the Nov 2 VRS cutoff and includes at least five TWC teams (FURIA, Legacy, Aurora, 9z, BetBoom). The claim holds only for Falcons (skipped Bucharest) and possibly Virtus.pro (ledger entry 74).",
       "resolution": "Site wording stays 'one of the last VRS-point opportunities'; the conflict is flagged here. Betting guide treats TWC as the last VRS event only for Falcons/VP."
+    },
+    {
+      "issue": "molodoy's eye condition: material claim with partly social/broadcast sourcing",
+      "detail": "The surgery detail (pressure behind the eyes causing migraines, tablets ineffective, operation planned in Kazakhstan) comes from the Sept 20 StarLadder broadcast relayed by caster NarT on X plus a hawk.live report; HLTV's StarSeries EVP piece (Sept 23) confirms only that 'molodoy's eye issues' exist. The injury itself dates to pre-EWC reports (Aug 9-11). It is material to FURIA's Finals outlook, but no club or player statement has been issued.",
+      "resolution": "The claim is published with all three sources linked (ledger entry 85) and flagged here; it should be re-checked against FURIA's official channels before being used in pricing decisions."
     }
   ],
   "limitations": [
-    "Match/outright odds for TWC 2026 were still not published at the fourth-pass check (Sept 24, 2026): esportbet's TWC hub showed \"Odds ... are not available\" and esportsinsider carried no futures. The betting analysis is a framework plus verified form data, not live prices.",
-    "The group draw and day-by-day match schedule are not yet published (only the finals-week structure is). The seed order shown is inferred from the Sept 7 VRS.",
+    "Match/outright odds for TWC 2026 were still not published at the fifth-pass re-check (Sept 24, 2026): esportbet's TWC hub still showed odds 'available closer to kickoff'. The betting analysis is a framework plus verified form data, not live prices.",
+    "The group draw and day-by-day match schedule are still unpublished as of the Sept 24 pass-5 re-check (the event page shows TBD brackets). The seed order shown is inferred from the Sept 7 VRS.",
+    "ESL Pro League S24 round-one pairings were not yet published as of Sept 24 (the event page shows a placeholder grid); EPL results (Oct 3-11) for the seven attending TWC teams are the most important missing signal.",
+    "molodoy's surgery timing is open: if it happens before mid-October it materially changes FURIA's Finals outlook (source is partly social/broadcast, flagged in irregularity terms in the ledger).",
     "HLTV player statistics for the Finals will only exist after the event; linked for post-event review.",
     "Head-to-head data covers all four 2026 FURIA-Falcons meetings plus the 2025 BLAST Rivals final; full H2H scraping (all 28 pairings, all maps) is future work.",
+    "Map-pool win rates (pass 5) are 3-month samples including online play and, for Virtus.pro, non-tier-1 opposition; they are context inputs, not probabilities, and unplayed maps are not confirmed perma-bans.",
     "Some primary sources are X/Twitter posts or Google Drive files (the rulebook) which may require login or change without notice.",
     "Rankings move weekly (HLTV) and per snapshot (Valve). Every rank figure on the site is labeled with its system and date. The Oct 5 VRS snapshot will change the numbers but not the seeding (which uses September).",
-    "ESL Pro League S24 (Oct 3-11) results and any post-Sept 24 roster news are not captured and must be added in a follow-up pass before Oct 14. PGL Masters Bucharest (Oct 24-31) outcomes and opening odds are also uncaptured; the group draw and day-by-day schedule remain unpublished as of Sept 24."
-  ]
+    "Any post-Sept 24 roster news, EPL S24 results, the group draw and opening odds remain uncaptured and must be added in a follow-up pass before Oct 14."
+  ],
+  "map_pool_win_rates": {
+    "window": "June 24 - September 24, 2026 (HLTV team stats, online + LAN)",
+    "note": "Percentages are map win rates over the window; 'no maps' means zero maps played in the window (a veto relevance signal), not a confirmed perma-ban. Sample sizes are small (roughly 5-18 maps per team per map); treat as context, not probability. Virtus.pro's sample includes non-tier-1 opposition.",
+    "teams": {
+      "FURIA": {
+        "Nuke": 75.0,
+        "Inferno": 66.7,
+        "Mirage": 55.6,
+        "Ancient": 50.0,
+        "Cache": 44.4,
+        "Dust2": 44.4,
+        "Anubis": 0.0
+      },
+      "Falcons": {
+        "Dust2": 75.0,
+        "Inferno": 75.0,
+        "Nuke": 66.7,
+        "Mirage": 50.0,
+        "Ancient": 20.0,
+        "Anubis": 0.0,
+        "Cache": null
+      },
+      "Legacy": {
+        "Inferno": 100.0,
+        "Nuke": 75.0,
+        "Mirage": 71.4,
+        "Ancient": 66.7,
+        "Dust2": 55.6,
+        "Cache": 50.0,
+        "Anubis": null
+      },
+      "Aurora": {
+        "Nuke": 100.0,
+        "Anubis": 62.5,
+        "Mirage": 60.0,
+        "Inferno": 57.1,
+        "Cache": 50.0,
+        "Dust2": 50.0,
+        "Ancient": 0.0
+      },
+      "9z": {
+        "Cache": 66.7,
+        "Dust2": 62.5,
+        "Mirage": 60.0,
+        "Nuke": 50.0,
+        "Inferno": 33.3,
+        "Ancient": 25.0,
+        "Anubis": null
+      },
+      "BetBoom": {
+        "Dust2": 100.0,
+        "Mirage": 75.0,
+        "Ancient": 60.0,
+        "Cache": 50.0,
+        "Anubis": 50.0,
+        "Nuke": 33.3,
+        "Inferno": null
+      },
+      "PARIVISION": {
+        "Ancient": 71.4,
+        "Dust2": 60.0,
+        "Mirage": 50.0,
+        "Anubis": 50.0,
+        "Inferno": 20.0,
+        "Cache": 0.0,
+        "Nuke": null
+      },
+      "Virtus.pro": {
+        "Ancient": 87.5,
+        "Dust2": 72.2,
+        "Mirage": 61.5,
+        "Cache": 55.6,
+        "Nuke": 44.4,
+        "Anubis": 37.5,
+        "Inferno": null
+      }
+    },
+    "source": "https://www.hltv.org/stats/teams/maps/8297/furia?startDate=2026-06-24&endDate=2026-09-24",
+    "sources": [
+      "https://www.hltv.org/stats/teams/maps/8297/furia?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/11283/falcons?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/12468/legacy?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/11861/aurora?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/9996/9z?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/12394/betboom?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/12467/parivision?startDate=2026-06-24&endDate=2026-09-24",
+      "https://www.hltv.org/stats/teams/maps/5378/virtuspro?startDate=2026-06-24&endDate=2026-09-24"
+    ]
+  },
+  "horizon_2027": {
+    "majors": {
+      "first_major_2027": "Buenos Aires (FiReSPORTS)",
+      "second_major_2027": "Shanghai (Perfect World), Nov 22 - Dec 12, 2027, four stages, expected $1.25M (confirmed Sept 15, 2026)",
+      "majors_2028": "BLAST and ESL won the 2028 Major bids (HLTV)"
+    },
+    "esports_world_cup_2027": {
+      "dates": "July 20 - August 1, 2027",
+      "format": "32 teams, $2M; slots: 20 Global VRS + 2 NA + 2 SA + 2 Asia + 2 wildcard + 4 Riyadh open qualifier (July 16-18)",
+      "ewc_2028": "tentatively July 14-30, 2028"
+    },
+    "note": "TWC 2026's VRS weight feeds invitation standings that reach as far as EWC 2027.",
+    "sources": [
+      "https://www.hltv.org/news/45512/perfect-world-confirms-shanghai-as-host-city-of-second-2027-major",
+      "https://www.hltv.org/news/45521/esports-world-cup-2027-and-2028-dates-revealed"
+    ]
+  }
 }

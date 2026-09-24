@@ -14,7 +14,7 @@ A verified, source-linked knowledge base for the tournament, aimed at readers wh
 - **Roster change tracker** — every verified transfer/benching/signing affecting the field, with dates, sources and impact notes
 - **Betting guide** — format implications for markets, favorites/dark horses with verified form data, risk register (educational; no odds are invented)
 - **CS2 universe guide** — game rules, ecosystem (VRS, Majors, tiers), 2026 meta and map pool
-- **Verified master list** — an audit ledger: 80 research entries (four passes of 20, each verified line-by-line before being added), plus 19 flagged irregularities, limitations and the complete source directory
+- **Verified master list** — an audit ledger: 100 research entries (five passes of 20, each verified line-by-line before being added), plus 20 flagged irregularities, limitations and the complete source directory
 
 ## The no-hallucination rule
 
@@ -41,6 +41,12 @@ Key verification anchors:
 | PGL Masters Bucharest (Oct 24–31) | Liquipedia + TalkEsport + ShaneTheGamer | Sept 24, 2026 |
 | EPL S24 field & acceptances | HLTV news + Insider Gaming | Sept 24, 2026 |
 | Odds availability | esportbet TWC hub + esportsinsider | Sept 24, 2026 |
+| FISSURE Playground 3 results (Legacy title; TWC-team placings) | HLTV event 8266 + match reports | Sept 24, 2026 |
+| StarSeries Fall honors (ZywOo MVP, KSCERATO/Jimpphat EVPs) | HLTV EVP article | Sept 24, 2026 |
+| molodoy eye condition (flagged: partly social sourcing) | HLTV + X (NarT) + hawk.live | Sept 24, 2026 |
+| Map-pool win rates (all 8 teams, June 24–Sept 24) | HLTV team stats pages | Sept 24, 2026 |
+| PGL Masters Bucharest completed field | HLTV qualifier report | Sept 24, 2026 |
+| 2027 calendar (Shanghai Major, EWC 2027–28) | HLTV news + EWC official | Sept 24, 2026 |
 
 ## Repository structure
 
@@ -49,9 +55,11 @@ Key verification anchors:
 ├── .nojekyll                  ← tells GitHub Pages to serve files verbatim
 ├── data/
 │   ├── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
-│   └── research-ledger.json   ← 80 dated research entries (20 per pass) and source links
+│   └── research-ledger.json   ← 100 dated research entries (20 per pass) and source links
 ├── scripts/
-│   └── verify_site.py         ← zero-dependency local integrity check
+│   ├── verify_site.py         ← zero-dependency local integrity check (run before publishing)
+│   ├── pass5_ledger.py        ← pass-5 migration: appends ledger entries 81–100 (provenance)
+│   └── pass5_data.py          ← pass-5 migration: data/twc2026.json updates (provenance)
 ├── assets/
 │   └── style.css              ← design system (no JS dependencies)
 ├── index.html                 ← tournament overview          (GitHub Pages serves
@@ -68,8 +76,11 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 
 ## Data status & known limitations
 
-- **Data cutoff: September 24, 2026 (passes 1–2 on Sept 23, passes 3–4 on Sept 24).** Roster moves, the group draw, the schedule and odds released after this date are not yet captured.
-- Outright/match odds for TWC 2026 were **still not published** at the fourth-pass check (Sept 24: esportbet hub shows "Odds … are not available"; esportsinsider carried no futures); the betting guide deliberately contains no invented prices — only verified historical results and a framework.
+- **Data cutoff: September 24, 2026 (passes 1–2 on Sept 23, passes 3–5 on Sept 24).** Roster moves, the group draw, the schedule and odds released after this date are not yet captured.
+- Outright/match odds for TWC 2026 were **still not published** at the fifth-pass re-check (Sept 24: esportbet hub still says odds open "closer to kickoff"); the betting guide deliberately contains no invented prices — only verified historical results and a framework.
+- EPL S24 round-one pairings were **still unpublished** at the Sept 24 re-check (placeholder grid on the event page).
+- **molodoy's surgery timing is open** — material to FURIA's price; the surgery detail is partly social/broadcast-sourced (flagged as irregularity #20).
+- Map-pool win rates (pass 5) are small 3-month samples including online play (VP's include non-tier-1 opposition); unplayed maps are not confirmed perma-bans.
 - Group draw and day-by-day schedule: **TBD** (to be added when published). The finals-week structure (arrival Oct 12 → departure Oct 19; match days Oct 14–18) is verified from the official site.
 - Some primary sources are X/Twitter posts (e.g., PARIVISION's announcements) or a Google Drive PDF (the rulebook, marked "[INTERNAL]" with stale 2025 text) that may require login or change without notice.
 - Seed order is **inferred** from the Sept 7 VRS; the seed-to-group mapping is unpublished.
@@ -77,6 +88,7 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 - Rankings move weekly (HLTV) / per-snapshot (Valve) / continuously (HLTV's live Valve badge); every rank figure on the site is labeled with system + date.
 - Second-pass additions: previous editions' full context (2023 FaZe, 2024 The MongolZ in Berlin, 2025 FURIA), all five 2026 regional series results, HLTV's 2025 Top 20 (six Finals players), the complete FURIA–Falcons H2H (Falcons 4–0 in 2026), CS2 MR12 rules, VRS mechanics, and the BetBoom visa/ArtFr0st chain.
 - Fourth-pass additions (entries 61–80): the Global Qualifier deep-dive (format, slots, full placings, 100 Thieves with device/rain, the official-page "four teams" contradiction, September-VRS seeding, slot-only reward), field absences (Spirit/Vitality/MOUZ/NAVI/G2 out; only FURIA of the past champions), The MongolZ crisis (tikuak/DarkMeister signed July, benched Sept 15), HObbit's 2017 Kraków Major pedigree and June–July stand-in stint, PGL Masters Bucharest (Oct 24–31: format, Oct 5 VRS seeding, five TWC teams in the field, Falcons skip), the "final VRS opportunity" conflict, EPL S24 field checks (1win = TDK core + fame + BELCHONOKK), dated odds status, broadcast TBA, the per-place 50/50 prize-share table, and two disclosure notes (HLTV/Dexerto are listed event partners; Thunderpick books markets on its own event). **New flags:** irregularities #18 (official GQ page self-contradiction) and #19 (the "final opportunity" claim).
+- Fifth-pass additions (entries 81–100): FISSURE Playground 3 (placings for the five attending TWC teams, the FalleN/YEKINDAR/S1ren interviews, the EVP list: n1ssim/NertZ/nqz, latto's third China MVP), StarSeries Fall honors (ZywOo's fifth MVP of 2026, KSCERATO's top EVP, Jimpphat's resurgence), molodoy's eye condition (**new flag: irregularity #20** — partly social sourcing), Fabre's move to Eternal Fire, BC.Game's electroNic→asap switch with the Europe→Asia VRS region flip, the completed PGL Masters Bucharest field, the Shanghai 2027 Major + EWC 2027–28 calendar, the BESTIA/Fluxo Americas VRS race, the Complexity and ODDIK closures, Virtus.pro's VRS trajectory (below #100 → top 30; first big LAN since IEM Chengdu 2025), and HLTV-sourced 3-month map-pool win rates for all eight teams (mirrored as `map_pool_win_rates` in the JSON and a new Stats section).
 - Third-pass additions (entries 41–60): rulebook rules (3-of-5 core-roster rule, stand-ins, veto order, $12,500 OT, forfeits, withdrawal, integrity), Sept VRS seeding, Schengen logistics, the EPL S24 clash, StarSeries Fall (Aurora 2nd, FURIA 3rd), BLAST Open Porto, YEKINDAR's calling change, the Sept 22 CS2 update, the Nov 2 Major VRS cutoff. **Corrections:** BetBoom at the Cologne Major (S1ren, not d1Ledez, was absent), overtime money (entry 37), Magisk and fame records.
 
 ## Next steps (planned for a follow-up session)
@@ -84,13 +96,13 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 1. Refresh after ESL Pro League S24 ends (Oct 11) and before Oct 14: EPL results per TWC team, group draw, schedule, late roster moves/stand-ins (check against the 3-of-5 core rule).
 1b. Track The MongolZ (three active players since Sept 15) and PGL Masters Bucharest (Oct 24–31) outcomes — both move the VRS/Major picture around TWC.
 2. Capture opening odds (Thunderpick + aggregators) when posted, with timestamps.
-3. Add per-map team profiles (map win rates) once sample sizes justify it.
+3. Widen the map profiles to per-map H2H and pick/ban rates once group-stage veto data exists (3-month team win rates were added in pass 5).
 4. Automate weekly VRS/HLTV rank snapshots from Valve's machine-readable GitHub data.
 5. Post-event: results, final prize distribution, and a prediction-vs-outcome review.
 
 ## Updating the site
 
-Run `python3 scripts/verify_site.py` before publishing. It checks the eight-team/roster shape, the 80-entry ledger (four passes) and its mirror on the Verified List page, the data blocks (live Valve ranks, finals-week schedule, rulebook rules, pre-event calendar, Global Qualifier block), timeline order/duplicates, retired (corrected) claims, reserve fields, and local links including #anchors; it does not replace manual review of remote sources.
+Run `python3 scripts/verify_site.py` before publishing. It checks the eight-team/roster shape, the 100-entry ledger (five passes) and its mirror on the Verified List page, the data blocks (live Valve ranks, finals-week schedule, rulebook rules, pre-event calendar, Global Qualifier, map-pool win rates, 2027 horizon), the 20 irregularities, timeline order/duplicates, pass-5 subpage mirrors, retired (corrected) claims, reserve fields, and local links including #anchors; it does not replace manual review of remote sources.
 
 Edit the root HTML files (and mirror structural data changes into `data/twc2026.json` and `data/research-ledger.json`), commit to a branch, open a PR, and merge — GitHub Pages serves the repository root from `main` (`.nojekyll` is present).
 
