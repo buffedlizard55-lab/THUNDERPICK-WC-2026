@@ -1,8 +1,8 @@
 {
   "title": "TWC 2026 research ledger",
-  "purpose": "Twenty pre-event research entries checked against public sources before being published. This is a dated snapshot, not a live feed.",
+  "purpose": "Forty pre-event research entries checked against public sources before being published (20 from the first pass, 20 added in the second pass of Sept 23, 2026). This is a dated snapshot, not a live feed.",
   "reviewed_as_of": "2026-09-23",
-  "method": "Each claim was checked against the linked source text or structured record. A source is not treated as proof of a stronger claim than it states. Conflicts, moving rankings and unavailable event statistics remain flagged on the site.",
+  "method": "Each claim was checked against the linked source text or structured record. A source is not treated as proof of a stronger claim than it states. Conflicts, moving rankings and unavailable event statistics remain flagged on the site. Second-pass entries (21-40) cover previous TWC editions, the 2026 regional circuit, HLTV's 2025 player ranking, head-to-head records, transfer backstory, game rules and ranking mechanics; each was re-checked against the linked source before adding.",
   "entries": [
     {
       "id": 1,
@@ -214,6 +214,230 @@
         "https://www.thekallang.com.sg/en/things-to-do/events/pgl-major-singapore-2026.html",
         "https://liquipedia.net/counterstrike/PGL/2026/Singapore",
         "https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list"
+      ]
+    },
+    {
+      "id": 21,
+      "claim": "FURIA are the defending Thunderpick World Championship titleholders: they won TWC 2025 with a 3-2 reverse sweep over NAVI in Malta (final played October 19, 2025).",
+      "detail": "NAVI led 2-0 (Mirage 13-6, Inferno) before FURIA won Nuke, Dust2 and the decider 13-1. KSCERATO earned his first Grand Final MVP. Prize places: FURIA $500,000; NAVI $150,000; The MongolZ $70,000; Aurora $50,000; Venom/9z/Imperial/OG $20,000 each.",
+      "status": "verified",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/furia-pulls-off-the-reverse-sweep-to-win-thunderpick-world-championship-2025-302595328.html",
+        "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025",
+        "https://esportbet.com/furia-produce-monumental-comeback-to-win-thunderpick-world-championship/"
+      ]
+    },
+    {
+      "id": 22,
+      "claim": "TWC roll of honour: 2023 FaZe (beat Virtus.pro, ropz MVP), 2024 The MongolZ (beat HEROIC 3-1 in Berlin on November 3, 2024), 2025 FURIA.",
+      "detail": "The 2024 edition ran October 21 - November 3 with 16 teams and an $850,000 total prize pool ($500,000 to The MongolZ; 3DMAX third). The 2023 first edition was a $500,000 event won by FaZe Clan.",
+      "status": "verified",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/furia-pulls-off-the-reverse-sweep-to-win-thunderpick-world-championship-2025-302595328.html",
+        "https://insider-gaming.com/mongolz-wins-thunderpick-world-championship/",
+        "https://fieldlevelmedia.com/esports/the-mongolz-win-thunderpick-world-championship-title/",
+        "https://escharts.com/tournaments/csgo/thunderpick-world-championship-2024-csgo"
+      ]
+    },
+    {
+      "id": 23,
+      "claim": "The five 2026 regional series winners were: DragonClaw (EU Series 1, 2-1 over TDK), M80 (North America, 2-0 over Wildcard), ShindeN (South America Series 1, over UNO MILLE), Imperial (South America Series 2, 2-0 over BESTIA) and GenOne (EU Series 2, over Lazer Cats).",
+      "detail": "EU Series 1 final May 31; NA final May 3 (only two of seven playoff series were actually played - the rest were forfeits by teams unable to field eligible lineups); SA1 June 28; SA2 July 12; EU2 August 2. None of the five winners reached the Finals field - the Finals places came via VRS invites and the Global Qualifier.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/events/9171/thunderpick-world-championship-2026-europe-series-1",
+        "https://www.hltv.org/events/9296/thunderpick-world-championship-2026-europe-series-2",
+        "https://www.hltv.org/events/9239/thunderpick-world-championship-2026-south-america-series-1",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/North_America",
+        "https://www.hotspawn.com/counter-strike/news/imperial-win-thunderpick-world-championship-2026-sa-series-2",
+        "https://csgo.com/news/142926-m80-win-thunderpick-world-championship-2026-north-america"
+      ]
+    },
+    {
+      "id": 24,
+      "claim": "VRSDelivery renamed to DragonClaw on May 30, 2026 - one day before winning TWC EU Series 1 - which is why the winner appears under two names across sources.",
+      "detail": "Hotspawn's May 31 final report says 'VRSDelivery'; HLTV's event prize list says 'DragonClaw' (Poland). Liquipedia's EU Series 1 page carries the note 'May 30th - VRSDelivery rename to DragonClaw.' Both names refer to the same team. (Liquipedia also logs a June 2 DragonClaw disqualification from a different event, European Pro League Series 7, pending an organizer investigation - unrelated to TWC.)",
+      "status": "verified",
+      "sources": [
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Europe/1",
+        "https://www.hotspawn.com/counter-strike/news/vrsdelivery-win-thunderpick-world-championship-2026-eu-series-1",
+        "https://www.hltv.org/events/9171/thunderpick-world-championship-2026-europe-series-1"
+      ]
+    },
+    {
+      "id": 25,
+      "claim": "Six players from the TWC 2026 Finals field made HLTV's Top 20 players of 2025: m0NESY #4, molodoy #6, KSCERATO #9, XANTARES #14, YEKINDAR #15, NiKo #18.",
+      "detail": "The full top three were ZywOo #1, donk #2, ropz #3. Falcons and FURIA each placed two players inside the top ten of the year.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/43492/top-20-players-of-2025-final-list",
+        "https://community.skin.club/en/news/top-20-hltv-players-of-2025"
+      ]
+    },
+    {
+      "id": 26,
+      "claim": "NiKo's #18 placing in 2025 was his record tenth career appearance in HLTV's Top 20 - the most of any player.",
+      "detail": "HLTV: 'NiKo sets a new record for most Top 20 appearances (ten) as he takes the 18th spot in the 2025 ranking.'",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/43505/top-20-players-of-2025-niko-18"
+      ]
+    },
+    {
+      "id": 27,
+      "claim": "m0NESY's #4 in 2025 was his fourth consecutive Top 20 placing (7th in 2022, 4th in 2023, 2nd in 2024, 4th in 2025), in the first year of his career without a trophy.",
+      "detail": "HLTV also records that G2 signed him from NAVI in 2022 for a reported $600,000 when he was 16 years old. He moved from G2 to Falcons in April 2025.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/43585/top-20-players-of-2025-m0nesy-4"
+      ]
+    },
+    {
+      "id": 28,
+      "claim": "karrigan left FaZe for Falcons on April 20, 2026 after a five-year second stint (February 2021 - April 2026) that had delivered FaZe's first Major (PGL Major Antwerp 2022, the first Major ever won by an international roster), eight LAN titles and the Intel Grand Slam Season 4.",
+      "detail": "The move was first reported by KRL on April 12; Twistzz told fans karrigan 'wasn't kicked' and the move was sudden. karrigan (born April 14, 1990) reunited with NiKo and coach zonic; FaZe had just missed the IEM Cologne Major for the first time in the organization's history. He won the Cologne Major with Falcons 61 days after joining.",
+      "status": "verified",
+      "sources": [
+        "https://dotesports.com/counter-strike/news/falcons-sign-karrigan",
+        "https://liquipedia.net/counterstrike/Karrigan",
+        "https://www.talkesport.com/editorials/karrigan-leaves-faze-clan-falcons-architect-blueprint-2026/"
+      ]
+    },
+    {
+      "id": 29,
+      "claim": "The IEM Cologne Major 2026 grand final set multiple records: NiKo lifted his first Major 3,067 days after ELEAGUE Boston 2018, karrigan won his second, and zonic his record sixth as a coach (four with Astralis, one with Vitality, one with Falcons).",
+      "detail": "All three final maps vs FURIA ended 13-8 (Mirage, Anubis, Inferno). karrigan joined apEX, b1t, ropz and ZywOo as the only players to win Majors in both CS:GO and CS2; it was a first Major for m0NESY, TeSeS and kyousuke. Falcons earned $500,000.",
+      "status": "verified",
+      "sources": [
+        "https://www.dust2.us/news/75245/niko-has-done-it-falcons-are-your-iem-cologne-major-champions",
+        "https://www.esportsbets.com/news/iem-cologne-2026-major-falcons-niko/",
+        "https://spawnsy.com/en/article/falcons-win-cologne-major-2026"
+      ]
+    },
+    {
+      "id": 30,
+      "claim": "Falcons' only tier-one title before karrigan arrived was PGL Bucharest 2025 (April 13, 2025, 3-0 over G2, with degster as MVP); after m0NESY joined they then lost seven consecutive grand finals.",
+      "detail": "The lost finals with m0NESY pre-karrigan: IEM Melbourne 2025, BLAST Rivals Spring 2025, Esports World Cup 2025, ESL Pro League Season 22, IEM Chengdu 2025, BLAST Rivals Fall 2025 and BLAST Bounty Winter 2026. (After karrigan joined they also finished 2nd at PGL Astana 2026 and CAC 2026 either side of winning the Cologne Major.)",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/41438/falcons-defeat-m0nesys-g2-to-win-pgl-bucharest",
+        "https://www.hltv.org/news/41556/vitality-outlast-falcons-in-iem-melbourne-final-thriller-to-clinch-grand-slam",
+        "https://tips.gg/team/falcons-esports-csgo/",
+        "https://blast.tv/cs/news/falcons-win-pgl-bucharest-with-3-0-over-g2"
+      ]
+    },
+    {
+      "id": 31,
+      "claim": "FURIA won four titles in 2025 - FISSURE Playground 2, the Thunderpick World Championship 2025, IEM Chengdu 2025 and BLAST Rivals Fall 2025 - and closed 2025 as the #1 team in Valve's global standings.",
+      "detail": "The BLAST Rivals Fall 2025 final (November 16, Hong Kong) was a 3-1 win over Falcons and, per the reported VRS update, lifted FURIA to 1,997 points, #1 in the world.",
+      "status": "verified",
+      "sources": [
+        "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025",
+        "https://www.strafe.com/news/read/furia-conquer-blast-rivals-fall-2025-to-win-third-consecutive-trophies/",
+        "https://esportbet.com/furia-beat-team-falcons-3-1-to-win-blast-rivals-fall-2025/",
+        "https://community.skin.club/en/news/furia-vs-falcons-blast-rivals-2025-grand-final"
+      ]
+    },
+    {
+      "id": 32,
+      "claim": "Falcons won all four of their series against FURIA in 2026: BLAST Open Rotterdam 2-1 (March 23), the IEM Rio third-place decider 2-0 (April 19), the PGL Astana quarterfinal 2-1 (May 15) and the IEM Cologne Major grand final 3-0 (June 21).",
+      "detail": "FURIA's most recent series win in the pairing was the BLAST Rivals Fall 2025 grand final, 3-1 in Hong Kong on November 16, 2025. At PGL Astana groups, 9z beat Falcons 2-1 (May 10) - a rare 2026 loss for Falcons to a TWC field side.",
+      "status": "verified",
+      "sources": [
+        "https://blast.tv/cs/tournaments/open-2026-season-1/match/e87b2a7f/furia-falcons",
+        "https://insider-gaming.com/falcons-eliminate-furia-blast-open-rotterdam/",
+        "https://egamersworld.com/counterstrike/news/34128/falcons-edge-out-furia-20-to-secure-third-place-at-SnKSDngpU",
+        "https://www.talkesport.com/news/cs2/pgl-astana-2026-quarter-finals-results/",
+        "https://www.dust2.us/news/75245/niko-has-done-it-falcons-are-your-iem-cologne-major-champions",
+        "https://esports.gg/news/counter-strike-2/blast-rivals-fall-2025-winners-recap/"
+      ]
+    },
+    {
+      "id": 33,
+      "claim": "Aurora's roster core came from Eternal Fire: on April 5, 2025 the organization signed the entire Eternal Fire five (MAJ3R, XANTARES, woxic, Wicadia, jottAAA) plus coach Fabre, after woxic cited unfavourable sponsorship conditions for CS in Turkey.",
+      "detail": "The all-Turkish era ended on July 2, 2026 when MAJ3R stepped down; the Finals five (kyxsan, XANTARES, woxic, Wicadia, Jimpphat + coach ash) is the international rebuild that followed.",
+      "status": "verified",
+      "sources": [
+        "https://bo3.gg/news/aurora-sign-eternal-fire-roster",
+        "https://escorenews.com/en/csgo/news/67605-aurora-signs-eternal-fire-cs2-team",
+        "https://www.hltv.org/news/45050/maj3r-steps-down-from-aurora"
+      ]
+    },
+    {
+      "id": 34,
+      "claim": "Boombl4 is a PGL Major Stockholm 2021 champion with NAVI (also IEM Cologne 2021 and two BLAST Premier Finals that year) who joined BetBoom in January 2025.",
+      "detail": "At the IEM Cologne Major 2026 he led BetBoom from Stage 1 into the playoffs while playing with a stand-in (FL4MUS), their first Major playoff appearance of the era.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/player/11840/boombl4",
+        "https://escharts.com/players/boombl4",
+        "https://insider-gaming.com/boombl4-iem-cologne-2026-major-interview/"
+      ]
+    },
+    {
+      "id": 35,
+      "claim": "Jame won the IEM Rio Major 2022 with Outsiders (Virtus.pro competing under a neutral name), beating HEROIC 2-0 in the final, and was named HLTV MVP of the event with a 1.30 rating.",
+      "detail": "Jame now plays for PARIVISION together with Rio-winning teammates FL1T and coach dastan. Virtus.pro's own profile page confirms Jame as a former captain of the VP roster and Rio 2022 champion and MVP.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/35071/jame-claims-iem-rio-major-mvp-award",
+        "https://virtus.pro/en/profile/jame"
+      ]
+    },
+    {
+      "id": 36,
+      "claim": "BetBoom's 2026 visa saga reshaped the Finals five: on March 23 FL4MUS and zorte stood in for visa-hit d1Ledez AND ArtFr0st for three LANs; on April 9 d1Ledez returned, zorte was kept for the season and ArtFr0st was benched; on August 1 ArtFr0st was loaned to 1win as TDK's core moved there.",
+      "detail": "BetBoom stated ArtFr0st 'needed to apply for a US visa from Europe, but without a Schengen visa, he automatically lost the opportunity to participate in the Atlanta tournament.' The TDK-to-1win transfer also made Ax1Le's move permanent (from the BetBoom bench) and loaned PARIVISION's BELCHONOKK to 1win. ArtFr0st had himself joined BetBoom permanently from PARIVISION in February 2026.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues",
+        "https://www.hltv.org/news/44322/d1ledez-returns-to-betbooms-starting-roster-as-zorte-stays-for-the-season-over-artfr0st",
+        "https://www.hltv.org/news/45218/tdk-transfer-to-1win",
+        "https://parivision.gg/feed/artfr0st-transfer-betboom/"
+      ]
+    },
+    {
+      "id": 37,
+      "claim": "CS2's competitive format is MR12: 12 rounds per half, first team to 13 wins, maximum 24 regulation rounds; overtime is MR3 (first to 4, with $10,000 starting money at Valve Majors); rounds last 1:55 with a 40-second bomb timer.",
+      "detail": "Overtime starting money differs at some third-party events (e.g., $12,500 at EPIC.LAN). Professional play follows the competitive default; matchmaking games can end 12-12 as draws, but pro matches always play OT to a winner.",
+      "status": "verified",
+      "sources": [
+        "https://bo3.gg/articles/how-many-rounds-in-cs2",
+        "https://blog.clash.gg/how-many-rounds-are-in-cs2",
+        "https://escorenews.com/en/csgo/article/50513-what-is-mr12-in-cs2-competitive-and-major-matchmaking-changes-to-mr12-system-like-in-valorant",
+        "https://tournaments.epiclan.co.uk/tournaments/epic43-cs/rules"
+      ]
+    },
+    {
+      "id": 38,
+      "claim": "Valve's Regional Standings (VRS) rank teams from prize money earned, beaten opponents' prize money and count of teams beaten, plus head-to-head results; HLTV's implementation shows the formula: a 400-point base plus up to 1,600 points scaled across four factors (bounty offered, bounty collected, opponent network, LAN wins) with head-to-head adjustments.",
+      "detail": "Points are age-weighted and decay over roughly six months; standings belong to a five-player roster, not an organization. Valve's August 2025 model update added a minimum participation requirement (5 of the last 10 matches) for a player to appear on a roster's VRS entry and let connected stages (qualifiers/group stages) count a share of the final stage's prize pool. Snapshots exclude matches from events that had not completed by the snapshot date.",
+      "status": "verified",
+      "sources": [
+        "https://github.com/ValveSoftware/counter-strike_regional_standings",
+        "https://www.hltv.org/news/42655/full-vrs-factor-breakdown-now-on-hltv"
+      ]
+    },
+    {
+      "id": 39,
+      "claim": "TWC 2025 set the Thunderpick series' viewership record, with a 62% increase over the 2024 championship finals.",
+      "detail": "Per Thunderpick's official release distributed by PRNewswire/Morningstar, Oct 27, 2025.",
+      "status": "verified",
+      "sources": [
+        "https://www.morningstar.com/news/pr-newswire/20251027ny07449/furia-pulls-off-the-reverse-sweep-to-win-thunderpick-world-championship-2025",
+        "https://www.prnewswire.com/news-releases/furia-pulls-off-the-reverse-sweep-to-win-thunderpick-world-championship-2025-302595328.html"
+      ]
+    },
+    {
+      "id": 40,
+      "claim": "Legacy have won three titles in China within roughly twelve months - CAC 2025, CAC 2026 (3-1 over Falcons in Shanghai, May 24, 2026) and FISSURE Playground 3 (September 13, 2026) - with latto named MVP at all three.",
+      "detail": "In the CAC 2026 final Legacy lost Nuke 1-13 then won three straight maps; kyousuke (1.28) and TeSeS (1.62) ratings could not save Falcons. latto's FISSURE final: 1.67 rating, 102.9 ADR, 80.6% KAST. latto finished in HLTV's top 30 for 2025 and targets a first top-20 placing in 2026 (two MVPs + two EVPs this year at the time of the FISSURE final).",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45509/legacy-sweep-g2-to-lift-fissure-playground-3-trophy",
+        "https://www.hltv.org/news/45511/latto-after-third-mvp-in-china-its-china-magic-i-think",
+        "https://www.talkesport.com/news/cs2/legacy-vs-falcons-cs-asia-championship-2026/",
+        "https://www.fragster.com/latto-legacy-fissure-playground-3-mvp/"
       ]
     }
   ]
