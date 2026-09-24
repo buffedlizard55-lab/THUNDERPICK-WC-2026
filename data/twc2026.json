@@ -1,11 +1,11 @@
 {
   "meta": {
     "project": "THUNDERPICK World Championship 2026 — Expert Hub",
-    "data_verified_as_of": "2026-09-23",
+    "data_verified_as_of": "2026-09-24",
     "verification_method": "Each published claim is checked against the linked public source text or structured record. Source conflicts, moving rankings and unavailable pre-event statistics are kept visible; see data/research-ledger.json and the Verified List page.",
     "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant.",
     "research_ledger": "data/research-ledger.json",
-    "verification_passes": "Two passes on Sept 23, 2026 (first build + 20 new ledger entries in the second pass). Ledger: data/research-ledger.json (40 entries)."
+    "verification_passes": "Three passes: first build and 20 new ledger entries on Sept 23, 2026; third pass on Sept 24, 2026 (20 more entries, the rulebook, corrections). Ledger: data/research-ledger.json (60 entries)."
   },
   "tournament": {
     "name": "Thunderpick World Championship 2026 (TWC 2026)",
@@ -63,7 +63,50 @@
       "source": "https://world-championship.thunderpick.io/2026-finals/"
     },
     "twc_2025_viewership": "Set the series record: +62% over the 2024 finals (official PR, Oct 27, 2025)",
-    "note_dates": "The official site headline \"12-19 October\" is the full Finals week (arrival Oct 12 through departure Oct 19); match days are Oct 14-18. This resolves the earlier flag about HLTV's \"October 12-19\" plan."
+    "note_dates": "The official site headline \"12-19 October\" is the full Finals week (arrival Oct 12 through departure Oct 19); match days are Oct 14-18. This resolves the earlier flag about HLTV's \"October 12-19\" plan.",
+    "rules": {
+      "source": "https://drive.google.com/file/d/1foK6YiQ9nvCwvfTRn9uRZbV1VEKI2Hia/view",
+      "document": "'[INTERNAL] ... Official Rulebook - 01.07.2026' (Google Drive PDF)",
+      "core_roster": "At least 3 of the 5 players on the Aug 3, 2026 VRS roster must play, or the team takes a technical loss (2.10/3.7)",
+      "roster_size": "Max 8 members; the coach may stand in (3.5)",
+      "stand_in": "One stand-in, registered 72h before and approved 15 min before a match; an emergency stand-in may be confidential (3.7, 3.7.1)",
+      "coach_comms": "The coach may talk at any time (3.9.1)",
+      "delays": "Bo3: 15 min late forfeits map 1, 30 min forfeits the series (3.17.2)",
+      "pauses": "Technical pauses are time-limited; 4v5 continuation is allowed if the team has won 10+ rounds or leads by 6+ (3.17.3)",
+      "server": "MR12, $800 start, 1:55 rounds, 20s freeze, 40s C4, 3x30s timeouts; overtime MR3 (best of 6) with $12,500 start and 1 timeout per OT (4.1)",
+      "veto_bo3": "Coin toss -> A ban, B ban, A pick, B pick, A ban, B ban; decider side by knife (4.4)",
+      "veto_bo5": "A ban, B ban, then 4 alternating picks; decider side by knife (4.4)",
+      "withdrawal": "More than 20 days out: next VRS team; less than 20 days: next European VRS team (2.4.6); 72h to accept an invite (2.4.5)",
+      "integrity": "Betting ban for participants (2.9); Akros anti-cheat (4.5.5); 3 minor = 1 major, 3 majors = disqualification (5.1-5.2)",
+      "prize_payment": "November 1-15 (2.7)",
+      "seeding": "By September VRS (Sept 7, 2026 snapshot); implied order: Falcons, Legacy, FURIA, 9z, Aurora, BetBoom, PARIVISION, Virtus.pro (inference)"
+    },
+    "pre_event_calendar": {
+      "starseries_fall_2026": {
+        "dates": "Sept 17-20, 2026 (Barcelona)",
+        "twc_teams": "Aurora 2nd (lost to Vitality 1-3 in the GF), FURIA 3rd",
+        "source": "https://www.hltv.org/news/45558/vitality-beat-aurora-at-starseries-fall-for-first-title-since-may"
+      },
+      "blast_open_porto_2026": {
+        "dates": "Aug 26-Sep 6, 2026",
+        "twc_teams": "Falcons 3rd-4th, FURIA 5th-6th; Aurora and Legacy out in the groups",
+        "source": "https://blast.tv/cs/tournaments/open-2026-season-2/match"
+      },
+      "esl_pro_league_s24": {
+        "dates": "Oct 3-11, 2026 (Katowice; final Oct 11)",
+        "twc_teams": "Falcons, 9z, Legacy, FURIA, BetBoom, Aurora, PARIVISION (all except Virtus.pro)",
+        "source": "https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24"
+      },
+      "cs2_update": {
+        "dates": "Sept 22, 2026",
+        "note": "Silent reload, silent unscope, Ancient/Cache/Mirage fixes",
+        "source": "https://www.hltv.org/news/45567/silent-reload-mechanic-arrives-in-new-cs-update"
+      },
+      "major_vrs_cutoff": {
+        "dates": "Nov 2, 2026 (the Oct 5 snapshot is the only one before it)",
+        "source": "https://www.talkesport.com/news/pgl-major-singapore-2026-third-place-match-vrs-cutoff-november-2-deadlines/"
+      }
+    }
   },
   "circuit_2026": [
     {
@@ -267,13 +310,16 @@
       "season_2026": [
         "IEM Cologne Major 2026 champions (3-0 vs FURIA in grand final; m0NESY Major MVP; zonic's record 6th Major as coach)",
         "3rd place at IEM Rio 2026",
-        "Runners-up: ESL Pro League S22, BLAST Rivals 2025 S2, BLAST Bounty 2026 S1 (pre-karrigan era had 7 grand finals, 1 title: PGL Bucharest 2025)"
+        "Runners-up: ESL Pro League S22, BLAST Rivals 2025 S2, BLAST Bounty 2026 S1 (pre-karrigan era had 7 grand finals, 1 title: PGL Bucharest 2025)",
+        "BLAST Open Porto 2026: 3rd-4th (lost to Spirit 0-2 in the semi-final)"
       ],
       "key_changes": "kyxsan benched and karrigan signed from FaZe on April 20, 2026, two months before winning the IEM Cologne Major.",
       "sources": [
         "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing",
         "https://eslfaceitgroup.com/press/intel-extreme-masters-cologne-2026-major-breaks-records-as-the-most-watched-counter-strike-tournament-of-all-time/",
-        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026",
+        "https://www.hltv.org/news/42041/falcons-bench-magisk",
+        "https://www.hltv.org/news/45031/bcgame-sign-magisk-as-in-game-leader"
       ],
       "bench_or_reserve": [
         {
@@ -283,7 +329,7 @@
         },
         {
           "nick": "Magisk",
-          "status": "benched before TWC; later listed with BC.Game in site research",
+          "status": "benched Jun 23, 2025 (replaced by kyousuke); signed by BC.Game as IGL on Jun 30, 2026",
           "role": "player"
         }
       ]
@@ -336,18 +382,21 @@
         "nick": "sidde",
         "name": "Sid Macedo",
         "country": "Brazil",
-        "joined": "— (head coach)"
+        "joined": "— (head coach; listed on the HLTV TWC lineup and Liquipedia EPL S24 roster, Sept 2026)"
       },
       "season_2026": [
         "IEM Cologne Major 2026 runners-up (0-3 vs Falcons); beat Aurora 2-0 in semifinal, 9z 2-1 in quarterfinal",
         "Defending Thunderpick World Championship champions (2025: reverse sweep 3-2 vs NAVI in Malta)",
-        "molodoy: HLTV #6 player of 2025 + HLTV Rookie of the Year 2025; FURIA ended 2025 #1 in VRS Global"
+        "molodoy: HLTV #6 player of 2025 + HLTV Rookie of the Year 2025; FURIA ended 2025 #1 in VRS Global",
+        "StarSeries Fall 2026: 3rd (0-4 on maps vs Vitality); Sept 17: YEKINDAR handed T-side calling on Anubis/Cache/Ancient back to FalleN"
       ],
       "key_changes": "No roster changes since April 2025. FalleN announced on April 17, 2026 (IEM Rio stage) that he will retire at the end of 2026 — TWC is one of his final events.",
       "sources": [
         "https://www.hltv.org/news/41512/furia-bench-skullz-add-yekindar-as-stand-in",
         "https://www.dust2.us/news/72948/breaking-fallen-announces-retirement-on-stage-at-iem-rio",
-        "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025"
+        "https://www.hotspawn.com/counter-strike/news/furia-reverse-sweep-navi-to-win-thunderpick-world-championship-2025",
+        "https://www.hltv.org/news/45540/yekindar-im-not-calling-anymore-and-hopefully-im-not-going-to-be-in-the-future",
+        "https://www.hltv.org/news/45558/vitality-beat-aurora-at-starseries-fall-for-first-title-since-may"
       ],
       "bench_or_reserve": [
         {
@@ -415,7 +464,8 @@
       "season_2026": [
         "FISSURE Playground 3 champions (Sept 13, 2026: 3-0 vs G2 in Suzhou, China; latto MVP with 1.67 rating in the final)",
         "Third consecutive title in China (CAC 2025, CAC 2026, FISSURE Playground 3); latto is a 3-time MVP, all in China",
-        "12th-14th at the IEM Cologne Major; semis of FISSURE PG3 included a 2-1 win over MIBR and a win over FURIA in the event"
+        "12th-14th at the IEM Cologne Major; semis of FISSURE PG3 included a 2-1 win over MIBR and a win over FURIA in the event",
+        "BLAST Open Porto 2026: out in the groups (1-2 vs Vitality), two weeks before winning FISSURE Playground 3"
       ],
       "key_changes": "lux benched (Feb 2) → arT signed (Feb 3); saadzin traded to Imperial → try signed (July 11) after n1ssim briefly requested a bench and returned (July 9).",
       "sources": [
@@ -488,13 +538,15 @@
       },
       "season_2026": [
         "IEM Cologne Major 2026 semifinalists (top-4; lost 0-2 to FURIA)",
-        "Roster went fully international in a six-day July rebuild: coach Fabre benched (Jun 29), MAJ3R stepped down & soulfly benched (Jul 2), Jimpphat + ashhh (Jul 3), kyxsan (Jul 8)"
+        "Roster went fully international in a six-day July rebuild: coach Fabre benched (Jun 29), MAJ3R stepped down & soulfly benched (Jul 2), Jimpphat + ashhh (Jul 3), kyxsan (Jul 8)",
+        "StarSeries Fall 2026: 2nd (beat Vitality 2-1 in the upper final, lost the GF 1-3)"
       ],
       "key_changes": "Complete identity change in July 2026 — from all-Turkish to international with a new IGL and coach, ~13 days before their first event (BLAST Bounty Season 2).",
       "sources": [
         "https://www.strafe.com/news/read/aurora-locks-in-new-cs2-roster-with-kyxsan-and-jimpphat/",
         "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened",
-        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026",
+        "https://www.hltv.org/news/45558/vitality-beat-aurora-at-starseries-fall-for-first-title-since-may"
       ],
       "bench_or_reserve": [
         {
@@ -562,7 +614,7 @@
         "nick": "BIT",
         "name": "Bruno Fukuda Lima",
         "country": "Brazil",
-        "joined": "—"
+        "joined": "— (listed on the Liquipedia EPL S24 roster, Sept 2026)"
       },
       "season_2026": [
         "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost 1-2 to FURIA in an all-Latin-American quarterfinal)",
@@ -644,13 +696,15 @@
       },
       "season_2026": [
         "IEM Cologne Major 2026 quarterfinalists (5th-8th; lost to Aurora); 4th at IEM Atlanta",
-        "Reached the Major with FL4MUS on loan from Virtus.pro (visa issues sidelined d1Ledez for three European LANs); FL4MUS' loan ended July 2 and he joined GamerLegion"
+        "The fifth slot changed by event: FL4MUS (loan from Virtus.pro) replaced d1Ledez at IEM Atlanta; at the Cologne Major S1ren was absent and FL4MUS played alongside d1Ledez (Valve VRS match data). The loan ended July 2 and FL4MUS joined GamerLegion."
       ],
-      "key_changes": "Stability at the core; the rotating fifth (FL4MUS loan, ended July 2026) is resolved — back to the full Boombl4-zorte-S1ren-d1Ledez-Magnojez five.",
+      "key_changes": "The core is stable. The rotating fifth (FL4MUS loan, ended July 2026) is resolved; the settled Boombl4-zorte-S1ren-d1Ledez-Magnojez five has only played together since July 1, 2026.",
       "sources": [
         "https://www.hltv.org/team/12394/betboom",
         "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues",
-        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026"
+        "https://en.wikipedia.org/wiki/IEM_Cologne_Major_2026",
+        "https://github.com/ValveSoftware/counter-strike_regional_standings/tree/main/invitation/2026/details/2026_08_03",
+        "https://www.hltv.org/news/44736/s1ren-to-miss-start-of-cologne-major"
       ],
       "bench_or_reserve": [
         {
@@ -802,11 +856,13 @@
         "Won the TWC Global Qualifier: lost opener 1-2 to K27, recovered (2-0 vs BESTIA, 2-0 vs K27), then eliminated FOKUS, HEROIC and HOTU (3-0 final; tO0RO 1.30 rating in the final)",
         "Rebuilt around the VP.Prodigy academy core after the old five sank to ~#100-123 in the VRS; five-match win streak in September 2026"
       ],
-      "key_changes": "Complete rebuild Feb-Mar 2026: Perfecto, FL1T, fame benched (FL1T → PARIVISION; fame later surfaced on 1win); academy duo promoted; mir returned as IGL.",
+      "key_changes": "Complete rebuild Feb-Mar 2026: Perfecto, FL1T, fame benched (FL1T → PARIVISION; fame to 1win on Aug 1, 2026); academy duo promoted; mir returned as IGL.",
       "sources": [
         "https://www.hltv.org/news/44059/virtuspro-finalize-roster-with-academy-duo",
         "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/",
-        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier",
+        "https://www.hltv.org/news/45218/tdk-transfer-to-1win",
+        "https://virtus.pro/news/virtus-pro-announce-fame-s-transfer"
       ],
       "bench_or_reserve": [
         {
@@ -816,7 +872,7 @@
         },
         {
           "nick": "fame",
-          "status": "benched; later listed with 1win in site research",
+          "status": "transfer-listed Feb 2026; K27 loan Apr 22-Jul 1; TDK loan from Jul 17; joined 1win (TDK core) permanently Aug 1, 2026",
           "role": "player"
         },
         {
@@ -844,6 +900,12 @@
       "team": "Aurora",
       "change": "Origin — Aurora sign the entire Eternal Fire roster (MAJ3R, XANTARES, woxic, Wicadia, jottAAA + coach Fabre) after sponsorship conditions in Turkey made continuing under EF untenable; the all-Turkish era ended July 2, 2026",
       "source": "https://bo3.gg/news/aurora-sign-eternal-fire-roster"
+    },
+    {
+      "date": "2025-06-23",
+      "team": "Falcons",
+      "change": "Magisk benched and replaced by kyousuke (Magisk later signed with BC.Game as IGL, Jun 30, 2026)",
+      "source": "https://www.hltv.org/news/42041/falcons-bench-magisk"
     },
     {
       "date": "2025-11",
@@ -902,13 +964,7 @@
     {
       "date": "2026-03-23",
       "team": "BetBoom",
-      "change": "FL4MUS (on loan from VP via OG) and zorte fielded as stand-ins due to d1Ledez visa issues",
-      "source": "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues"
-    },
-    {
-      "date": "2026-03-23",
-      "team": "BetBoom",
-      "change": "FL4MUS (on loan) and zorte fielded as stand-ins for visa-hit d1Ledez AND ArtFr0st for three LANs (Bucharest, Portugal, Spain)",
+      "change": "FL4MUS (on loan from VP via OG) and zorte fielded as stand-ins for visa-hit d1Ledez AND ArtFr0st for three LANs (Bucharest, Portugal, Spain)",
       "source": "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues"
     },
     {
@@ -936,6 +992,12 @@
       "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Europe/1"
     },
     {
+      "date": "2026-06-02",
+      "team": "BetBoom",
+      "change": "S1ren misses the Cologne Major; d1Ledez back in and FL4MUS plays as the fifth throughout (Jun 2-18)",
+      "source": "https://www.hltv.org/news/44736/s1ren-to-miss-start-of-cologne-major"
+    },
+    {
       "date": "2026-06-17",
       "team": "PARIVISION",
       "change": "HObbit signed (stand-in)",
@@ -956,8 +1018,8 @@
     {
       "date": "2026-07-02",
       "team": "BetBoom",
-      "change": "FL4MUS' loan ends — he had played IEM Atlanta and the entire Cologne Major campaign (5th–8th) as BetBoom's fifth, deputizing for visa-hit d1Ledez",
-      "source": "https://www.hltv.org/news/45019/short-news-week-26"
+      "change": "FL4MUS' loan ends. He played IEM Atlanta in place of d1Ledez, and the Cologne Major (5th-8th) in place of the absent S1ren (Valve VRS match data)",
+      "source": "https://github.com/ValveSoftware/counter-strike_regional_standings/tree/main/invitation/2026/details/2026_08_03"
     },
     {
       "date": "2026-07-03",
@@ -1008,6 +1070,12 @@
       "source": "https://www.hltv.org/news/45218/tdk-transfer-to-1win"
     },
     {
+      "date": "2026-08-01",
+      "team": "Virtus.pro / 1win",
+      "change": "fame's transfer: VP transfer list (Feb) → K27 loan (Apr 22-Jul 1) → TDK loan (Jul 17) → 1win signs TDK's core (Aug 1)",
+      "source": "https://virtus.pro/news/virtus-pro-announce-fame-s-transfer"
+    },
+    {
       "date": "2026-09-13",
       "team": "Virtus.pro",
       "change": "Won the TWC Global Qualifier (3–0 vs HOTU) for the eighth Finals spot — after losing the opener to K27 and winning five straight elimination-risk series (Sep 9–13)",
@@ -1024,6 +1092,24 @@
       "team": "PARIVISION",
       "change": "slaxejezzz benched; HObbit re-signed — 4 days after the TWC team list announcement",
       "source": "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit"
+    },
+    {
+      "date": "2026-09-17",
+      "team": "FURIA",
+      "change": "YEKINDAR stops calling: T-side calls on Anubis, Cache and Ancient return to FalleN (\"too much cortisol\")",
+      "source": "https://www.hltv.org/news/45540/yekindar-im-not-calling-anymore-and-hopefully-im-not-going-to-be-in-the-future"
+    },
+    {
+      "date": "2026-09-20",
+      "team": "Aurora / FURIA",
+      "change": "StarSeries Fall: Aurora 2nd (1-3 vs Vitality in the GF), FURIA 3rd; the last event before EPL S24",
+      "source": "https://www.hltv.org/news/45558/vitality-beat-aurora-at-starseries-fall-for-first-title-since-may"
+    },
+    {
+      "date": "2026-09-22",
+      "team": "All teams",
+      "change": "CS2 update: silent reload, silent unscope, Ancient/Cache/Mirage map fixes, new default crosshair",
+      "source": "https://www.hltv.org/news/45567/silent-reload-mechanic-arrives-in-new-cs-update"
     }
   ],
   "irregularities": [
@@ -1076,15 +1162,50 @@
       "issue": "Falcons' 'grand finals' count is window-dependent",
       "detail": "The 2025-26 pre-karrigan period is sometimes summarized as '7 grand finals, 1 title'. The precise, source-backed read: Falcons won PGL Bucharest 2025 (Apr 13, with degster) BEFORE m0NESY joined; with m0NESY they then lost seven straight finals (IEM Melbourne, BLAST Rivals Spring 2025, EWC 2025, ESL Pro League S22, IEM Chengdu 2025, BLAST Rivals Fall 2025, BLAST Bounty Winter 2026).",
       "resolution": "Site states the precise sequence instead of a bare count."
+    },
+    {
+      "issue": "Rulebook is marked '[INTERNAL]' and contains stale text",
+      "detail": "The rulebook PDF is titled '[INTERNAL] ... Official Rulebook - 01.07.2026'. It still contains '2025' wording, cross-references to non-existent sections (3.8.1, 4.8.1, 4.6) and online-event wording.",
+      "resolution": "Rules are quoted by section number with this caveat. Treat the rulebook as indicative until an updated public version appears."
+    },
+    {
+      "issue": "Site correction: BetBoom at the Cologne Major",
+      "detail": "Earlier passes said FL4MUS deputized for visa-hit d1Ledez during the Cologne Major. Valve's match-level VRS data shows d1Ledez played at Cologne and S1ren was the absent player; FL4MUS replaced d1Ledez only at IEM Atlanta.",
+      "resolution": "Corrected on teams, roster changes, betting guide and data (ledger entry 57)."
+    },
+    {
+      "issue": "Site correction: overtime money",
+      "detail": "Entry 37 said '$10,000 OT money at Valve Majors'. Valve's Major rulebook gives no such figure (it requires Premier defaults), while the TWC rulebook states $12,500.",
+      "resolution": "Entry 37 was rewritten and the CS2 guide now cites the TWC rulebook (entry 43)."
+    },
+    {
+      "issue": "ESL Pro League S24 ends 3 days before TWC starts",
+      "detail": "EPL S24 runs Oct 3-11 in Katowice with 7 of the 8 TWC teams (all except Virtus.pro). The EPL final is Oct 11, TWC arrival is Oct 12 and TWC matches start Oct 14.",
+      "resolution": "Flagged as a fatigue and preparation factor. Deep EPL runs mean less rest, and teams may save strats for one event. Not a rules issue."
+    },
+    {
+      "issue": "PGL Major start date conflict",
+      "detail": "PGL press releases (April and August 2026) give Nov 24 as the start date; the event page and venue listing say Nov 25. The Nov 2 VRS cutoff is consistent across sources.",
+      "resolution": "Site keeps Nov 25 - Dec 13 (event page) and notes the conflict."
+    },
+    {
+      "issue": "Third-place match missing on Liquipedia",
+      "detail": "Liquipedia's TWC 2026 format section omits the third-place match; HLTV's event page lists a Bo3 third-place decider, and prize money is split between 3rd ($100k) and 4th ($50k).",
+      "resolution": "Site follows HLTV plus the prize split (3rd and 4th paid differently, so a decider is implied)."
+    },
+    {
+      "issue": "TWC 2027 placeholder data on HLTV",
+      "detail": "HLTV already lists TWC 2027 (Oct 18-25, 2027) with a placeholder map pool.",
+      "resolution": "Not used; noted only so readers do not mistake it for 2026 data."
     }
   ],
   "limitations": [
-    "Match/outright odds for TWC 2026 were still not published at the second-pass check (Sept 23, 2026) - betting analysis is framework + verified form data, not live prices.",
-    "Group draw and day-by-day schedule for the Finals are not yet published (only the finals-week structure is).",
+    "Match/outright odds for TWC 2026 were still not published at the third-pass check (Sept 24, 2026; esportbet, Sept 16: bookmakers have yet to open outright markets). The betting analysis is a framework plus verified form data, not live prices.",
+    "The group draw and day-by-day match schedule are not yet published (only the finals-week structure is). The seed order shown is inferred from the Sept 7 VRS.",
     "HLTV player statistics for the Finals will only exist after the event; linked for post-event review.",
-    "Head-to-head data now covers all four 2026 FURIA-Falcons meetings plus the 2025 BLAST Rivals final, but full H2H scraping (all 28 pairings, all maps) is future work.",
-    "Some primary sources are X/Twitter posts (e.g., PARIVISION announcements) which may require login to view.",
-    "Rankings move weekly (HLTV) and per-snapshot (Valve); every rank figure on the site is labeled with system + date, including the live Valve ranks read from HLTV's event badges (Sept 23).",
-    "Roster news after Sept 23, 2026 is not captured and should be added in a follow-up pass before the event (Oct 14-18)."
+    "Head-to-head data covers all four 2026 FURIA-Falcons meetings plus the 2025 BLAST Rivals final; full H2H scraping (all 28 pairings, all maps) is future work.",
+    "Some primary sources are X/Twitter posts or Google Drive files (the rulebook) which may require login or change without notice.",
+    "Rankings move weekly (HLTV) and per snapshot (Valve). Every rank figure on the site is labeled with its system and date. The Oct 5 VRS snapshot will change the numbers but not the seeding (which uses September).",
+    "ESL Pro League S24 (Oct 3-11) results and any post-Sept 24 roster news are not captured and must be added in a follow-up pass before Oct 14."
   ]
 }
