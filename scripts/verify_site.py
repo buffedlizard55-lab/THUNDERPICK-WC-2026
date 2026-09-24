@@ -135,6 +135,19 @@ def main() -> None:
     if shown5 != list(range(81, 101)):
         fail(f"entries 81-100 table must list IDs 81..100 in order, found {shown5}")
 
+    # Page-level "updated" badges must not lag behind the ledger's pass count.
+    import math
+    passes = math.ceil(len(entries) / 20)
+    wordmap = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5,
+               "sixth": 6, "seventh": 7, "eighth": 8, "ninth": 9, "tenth": 10}
+    for page in ROOT.glob("*.html"):
+        html = page.read_text(encoding="utf-8")
+        for badge in re.findall(r'class="updated"[^>]*>([^<]+)<', html):
+            found = [int(n) for n in re.findall(r"pass (\d+)", badge)]
+            found += [v for w, v in wordmap.items() if re.search(rf"\b{w} pass(?:es)?\b", badge)]
+            if found and max(found) < passes:
+                fail(f"{page.name} updated badge is stale ({badge.strip()!r}; ledger is at pass {passes})")
+
     # Fifth-pass content must be mirrored on the subpages.
     page_probes = {
         "stats.html": ('id="map-pool"', "Map-pool profiles"),
