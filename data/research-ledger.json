@@ -2,7 +2,7 @@
   "title": "TWC 2026 research ledger",
   "purpose": "Sixty pre-event research entries checked against public sources before being published (20 from the first pass and 20 from the second pass, both Sept 23, 2026; 20 from the third pass, Sept 24, 2026). This is a dated snapshot, not a live feed.",
   "reviewed_as_of": "2026-09-24",
-  "method": "Each claim was checked against the linked source text or structured record. A source is not treated as proof of a stronger claim than it states. Conflicts, moving rankings and unavailable event statistics remain flagged on the site. Second-pass entries (21-40) cover previous TWC editions, the 2026 regional circuit, HLTV's 2025 player ranking, head-to-head records, transfer backstory, game rules and ranking mechanics; each was re-checked against the linked source before adding. Third-pass entries (41-60) cover the official rulebook (roster, stand-in, server, veto, delay, withdrawal and integrity rules), September VRS seeding, visa logistics, the ESL Pro League S24 schedule clash, StarSeries Fall and BLAST Open Porto form, the Sept 22 game update, the Major VRS cutoff, and corrections to BetBoom, Magisk and fame records.",
+  "method": "Each published claim is checked line by line against the linked public source text or structured record before being added. Four passes of 20 entries each: pass 1-2 on Sept 23, 2026, pass 3 and pass 4 on Sept 24, 2026. Conflicts are flagged as irregularities, never smoothed over. Inferences are labeled as such inside the entry.",
   "entries": [
     {
       "id": 1,
@@ -642,6 +642,211 @@
         "https://www.hltv.org/news/42041/falcons-bench-magisk",
         "https://www.hltv.org/news/45031/bcgame-sign-magisk-as-in-game-leader",
         "https://www.hltv.org/news/45097/official-bcg-complete-roster-with-mzinho"
+      ]
+    },
+    {
+      "id": 61,
+      "claim": "Global Qualifier structure: 16 slots (14 Europe VRS invites, 1 North America and 1 South America Americas-VRS invite), 4 GSL groups of four feeding an 8-team single-elimination playoff, Bo3 throughout except a Bo5 Grand Final; played online in Europe on September 9–13 (groups 9–11, playoffs 12–13).",
+      "detail": "Invites used the August 3 VRS publication. HLTV labels the top-eight playoff bracket the 'Play-in'. The official page's '8 Teams advance to Group Stage' line appears to be a typo for advancing to the playoffs (the playoff bracket is 8 teams).",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+      ]
+    },
+    {
+      "id": 62,
+      "claim": "Global Qualifier final placings: 1st Virtus.pro (qualified for the Finals), 2nd HOTU, 3rd–4th HEROIC and BBL, 5th–8th 1win, 100 Thieves, Wildcard, FOKUS, 9th–12th Ninjas in Pyjamas, 3DMAX, Nemesis, K27, 13th–16th INFINITE, Acend, EYEBALLERS, BESTIA.",
+      "detail": "Only the winner advanced. Cross-checked against esportsinsider's standings table (win-loss records: VP 5–1 down to 0–2 for the bottom four) and its partial results feed — both agree with HLTV's prize list.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier",
+        "https://esportsinsider.com/betting-odds/counter-strike/cs-go-thunderpick-world-championship-closed-qualifier-2026"
+      ]
+    },
+    {
+      "id": 63,
+      "claim": "100 Thieves fielded Major champions Nicolai 'device' Reedtz and Håvard 'rain' Nygaard at the Global Qualifier (with Gizmy, poiii and sirah) and were eliminated in the quarterfinals, 0–2 by HOTU, finishing 5th–8th.",
+      "detail": "HLTV's HOTU–100 Thieves match page lists the five-man lineup and the 2–0 scoreline (Anubis 13–8, Mirage 13–9 per the half records). Two decorated names' return to CS2 did not reach the Malta Finals.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/matches/2397878/hotu-vs-100-thieves-thunderpick-world-championship-2026-closed-qualifier",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+      ]
+    },
+    {
+      "id": 64,
+      "claim": "Official-source contradiction: the Global Qualifier page says ‘Four teams will earn a slot in the TWC Finals’, but the same page says ‘The winner of the Global Qualifier earns a spot’ — and in fact only Virtus.pro qualified.",
+      "detail": "Flagged as irregularity #18. The result record confirms a single slot; the ‘four teams’ sentence appears to be stale template text. Reviewers can verify both lines on the linked official page.",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier"
+      ]
+    },
+    {
+      "id": 65,
+      "claim": "Qualifier seeding and logistics: invites came from the August VRS but ‘Initial Seed VRS: September VRS’; teams had to be physically based in Europe for the full event; only Americas VRS invitees received travel and accommodation (6 pax), arriving September 7 and departing September 14.",
+      "detail": "The page does not name which two teams held the Americas slots — that mapping is not published (minor gap, flagged). Useful for reading stand-in and latency context in the qualifier results.",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/"
+      ]
+    },
+    {
+      "id": 66,
+      "claim": "The Global Qualifier carried no prize money — HLTV's prize distribution is ‘Spot at Main Event’ only; the sole reward for the 16-team field was the Finals slot.",
+      "detail": "Contrast with the regional series, which paid $15k–$30k each (entry 2).",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier",
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/"
+      ]
+    },
+    {
+      "id": 67,
+      "claim": "Headliners absent from the Finals: HLTV's top three on Sept 21 (Spirit, Vitality, MOUZ) plus NAVI and G2 are all missing; FURIA and Falcons are the only top-five teams in the field, and four teams are top-10 (FURIA #4, Falcons #5, Legacy #6, Aurora #9 on HLTV's Sept 21 ranking).",
+      "detail": "esportbet (Sept 16) called FURIA and Falcons ‘the only two top-five ranked teams’; esports.net (Sept 17), citing Sport.ua and HLTV, reported NAVI, G2, Spirit, MOUZ and Vitality all missing. Field-strength context for outright pricing — the draw is materially weaker than a Major.",
+      "status": "verified",
+      "sources": [
+        "https://esportbet.com/thunderpick-world-championship-2026-team-list-announced/",
+        "https://www.esports.net/news/gaming/thunderpick-world-championship-2026-malta-2",
+        "https://www.hltv.org/ranking/teams/2026/september/21"
+      ]
+    },
+    {
+      "id": 68,
+      "claim": "FURIA are the only past TWC champion in the 2026 field: 2023 winners FaZe and 2024 winners The MongolZ did not qualify, and 2025 runner-up NAVI is absent as well; the roll of honour has never had a repeat winner.",
+      "detail": "Verified against the announced eight-team field (HLTV/PRNewswire Sept 16) and the past-winners record (2023 FaZe, 2024 The MongolZ, 2025 FURIA — three different organizations). The MongolZ returned in 2025 as defending champions and finished 3rd ($70,000). No organization has won the title twice.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026",
+        "https://www.prnewswire.com/news-releases/furia-pulls-off-the-reverse-sweep-to-win-thunderpick-world-championship-2025-302595328.html",
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html"
+      ]
+    },
+    {
+      "id": 69,
+      "claim": "In July 2026 The MongolZ — the 2024 TWC champions, absent from the 2026 Finals — signed 17-year-old tikuak (from Chinggis Warriors) and 18-year-old academy graduate DarkMeister after benching cobrazera and losing mzinho to BC.Game.",
+      "detail": "Ecosystem watch: The MongolZ remain Asia's top team and a Singapore Major seeding bellwether; their roster state affects the Major race that TWC's VRS points feed.",
+      "status": "verified",
+      "sources": [
+        "https://www.strafe.com/news/read/the-mongolz-finalizes-cs2-roster-with-two-youngsters/",
+        "https://www.esportsbets.com/news/mongol-z-tikuak-darkmeister-cs2-roster"
+      ]
+    },
+    {
+      "id": 70,
+      "claim": "On September 15, 2026 The MongolZ benched both tikuak and DarkMeister — two months after signing them — leaving three active players (bLitz, Techno, 910) plus coach maaRaa in the middle of the Major race.",
+      "detail": "The organisation confirmed on X (@1mongolz, Sept 15); shanethegamer (Sept 16) notes they now have as many benched as active players. Flagged as ecosystem drama: an incomplete roster near the November 2 VRS cutoff can alter Singapore Major pools and PGL Bucharest opponents.",
+      "status": "verified",
+      "sources": [
+        "https://www.shanethegamer.com/news/the-mongolz-bench-tikuak-darkmeister/",
+        "https://x.com/CS2News_EN/status/2099832201793753276"
+      ]
+    },
+    {
+      "id": 71,
+      "claim": "PARIVISION's HObbit is a PGL Major Kraków 2017 champion with Gambit (born 1994, ~$884,000 career winnings) and had already been a PARIVISION stand-in from June 17 to July 29, 2026 before re-signing on September 17.",
+      "detail": "Liquipedia's player page supports the pedigree and the exact stand-in window. This sharpens the site's earlier 're-signed' shorthand: his status has changed three times since June (stand-in Jun 17, out Jul 29, permanent Sep 17).",
+      "status": "verified",
+      "sources": [
+        "https://liquipedia.net/counterstrike/HObbit",
+        "https://www.hltv.org/news/45534/parivision-replace-slaxejezzz-with-hobbit"
+      ]
+    },
+    {
+      "id": 72,
+      "claim": "PGL Masters Bucharest (Oct 24–31, PGL Studio, Bucharest) is a 16-team, $1,250,000 Valve Tier 1 event: Bo3 Swiss stage into a single-elimination playoff with a Bo5 final; invites were issued from the July 6 VRS and main-event seeding uses the October 5 VRS.",
+      "detail": "Prize split is again 50/50 players/clubs ($625,000 each). It is the last Tier-1 stop before the November 2 VRS cutoff for PGL Major Singapore — and the Oct 5 seeding snapshot is the one TWC results can move (entry 59).",
+      "status": "verified",
+      "sources": [
+        "https://liquipedia.net/counterstrike/PGL/2026/Masters",
+        "https://www.talkesport.com/news/cs2/pgl-bucharest-masters-2026/",
+        "https://www.shanethegamer.com/esports-news/pgl-masters-bucharest-2026-cs2/"
+      ]
+    },
+    {
+      "id": 73,
+      "claim": "Five of the eight TWC teams are in Bucharest's announced 12-team invite field (FURIA, Legacy, Aurora, 9z, BetBoom); Falcons were the only top team to skip the invite round, and PARIVISION and Virtus.pro are not in the announced list.",
+      "detail": "The event is 16 teams with qualifier slots on top of the announced list. Falcons (and possibly VP) therefore play TWC as their last VRS-ranked event before the cutoff — a rust-vs-rest angle already flagged on the betting guide.",
+      "status": "verified",
+      "sources": [
+        "https://egamersworld.com/counterstrike/event/pgl-masters-bucharest-2026-thkIFvyQ2",
+        "https://escharts.com/tournaments/csgo/pgl-masters-bucharest-2026",
+        "https://www.hltv.org/news/45146/falcons-the-only-top-team-to-skip-pgl-masters-bucharest-as-invites-are-announced"
+      ]
+    },
+    {
+      "id": 74,
+      "claim": "Irregularity: esportbet (Sept 16) called TWC ‘the final opportunity for participating teams to secure VRS points ahead of the Singapore Major’ — but PGL Masters Bucharest ends October 31, before the November 2 VRS cutoff, and includes at least five of the eight TWC teams.",
+      "detail": "The ‘final opportunity’ phrasing holds only for Falcons (skipped Bucharest) and possibly Virtus.pro. Flagged as irregularity #19; site wording stays ‘one of the last VRS-point opportunities’ (entry 59 for the cutoff).",
+      "status": "verified",
+      "sources": [
+        "https://esportbet.com/thunderpick-world-championship-2026-team-list-announced/",
+        "https://liquipedia.net/counterstrike/PGL/2026/Masters",
+        "https://www.talkesport.com/news/pgl-major-singapore-2026-third-place-match-vrs-cutoff-november-2-deadlines/"
+      ]
+    },
+    {
+      "id": 75,
+      "claim": "EPL S24 field verification: all 12 VRS invites were accepted (no declines), and the four ESL Challenger League champions were 1win (the TDK core plus fame and PARIVISION-loanee BELCHONOKK), M80, ShindeN and TYLOO; group seeding was set September 21 and the playoffs run at the Spodek Arena October 9–11.",
+      "detail": "Entry 50 covers the EPL/TWC clash itself; this adds acceptance status, 1win's composition (connecting entries 51 and the PARIVISION loan web) and the seeding date. HLTV on Aug 10: the top-5 VRS at the time were ‘Spirit, Falcons, 9z, MOUZ, Vitality’ — 9z's slide since is the field's biggest rank move.",
+      "status": "verified",
+      "sources": [
+        "https://www.hltv.org/news/45270/esl-pro-league-s24-invites-announced",
+        "https://insider-gaming.com/esl-announces-teams-for-pro-league-return-to-katowice/"
+      ]
+    },
+    {
+      "id": 76,
+      "claim": "No outright market for TWC 2026 existed in the checked betting sources at the fourth-pass check (Sept 24, 2026): esportbet's TWC hub still shows ‘Odds for the Thunderpick World Championship are not available’, and esportsinsider's odds feed carried no futures even for the completed Global Qualifier.",
+      "detail": "esportbet (Sept 16): top-rated CS2 bookmakers ‘have yet to open outright markets … which should become available closer to the tournament kickoff’. Its hub also mixes 2025/2026 headings — use it as an odds index only. Market types it lists for TWC: outright winner, match H2H, map/kill props, player of the tournament.",
+      "status": "verified",
+      "sources": [
+        "https://esportbet.com/counter-strike/thunderpick/",
+        "https://esportbet.com/thunderpick-world-championship-2026-team-list-announced/",
+        "https://esportsinsider.com/betting-odds/counter-strike/cs-go-thunderpick-world-championship-closed-qualifier-2026"
+      ]
+    },
+    {
+      "id": 77,
+      "claim": "Broadcast talent for the Finals is still TBA: Liquipedia lists host, interviewer, analyst, commentator and observer all ‘TBA’ (checked Sept 24); English is the only stream language listed so far. The broadcast runs on twitch.tv/thunderpicktv, kick.com/thunderpick and YouTube.",
+      "detail": "Production-side uncertainty cannot be priced yet; channels and the language gap are confirmed on Liquipedia and the official release.",
+      "status": "verified",
+      "sources": [
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026",
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html"
+      ]
+    },
+    {
+      "id": 78,
+      "claim": "Prize distribution is split 50/50 between players and club at every placing: 1st $500,000 ($250,000 player share + $250,000 team share), 2nd $250,000 ($125k/$125k), 3rd $100,000 ($50k/$50k), 4th $50,000 ($25k/$25k), 5th–6th $30,000 ($15k/$15k), 7th–8th $20,000 ($10k/$10k).",
+      "detail": "Liquipedia's prize table gives the per-place player/team columns; HLTV's event page shows the $500,000 player-share header. Player-share math matters for roster disputes and stand-in cuts under the rulebook's payout rules (entry 47).",
+      "status": "verified",
+      "sources": [
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026",
+        "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
+      ]
+    },
+    {
+      "id": 79,
+      "claim": "The official event site's partner logos include HLTV, Dexerto, VRL and GRID (operator GAM3RS_X; GRID is also the data partner).",
+      "detail": "Source-independence disclosure: this hub uses HLTV as a primary source and HLTV is a listed event partner — cross-checks against Liquipedia, Valve's GitHub and primary org announcements are therefore mandatory, and are applied throughout the ledger.",
+      "status": "verified",
+      "sources": [
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/",
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html"
+      ]
+    },
+    {
+      "id": 80,
+      "claim": "Thunderpick is both the title sponsor and a crypto-betting operator (the official site advertises BTC, ETH, LTC, USDT, XRP and BCH payments) whose own markets cover the event it sponsors; TWC is among the largest bookmaker-backed CS2 prize pools.",
+      "detail": "The rulebook (section 2.9, entry 47) bans players and staff from betting. For readers: treat sponsor-hosted content as marketing rather than analysis, and compare prices across books.",
+      "status": "verified",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html",
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/"
       ]
     }
   ]

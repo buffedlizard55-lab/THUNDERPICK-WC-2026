@@ -36,8 +36,8 @@ def main() -> None:
 
     entries = ledger.get("entries", [])
     ids = [entry.get("id") for entry in entries]
-    if ids != list(range(1, 61)):
-        fail(f"research ledger must contain IDs 1..60 in order (three passes), found {ids}")
+    if ids != list(range(1, 81)):
+        fail(f"research ledger must contain IDs 1..80 in order (four passes), found {ids}")
     if any(entry.get("status") != "verified" for entry in entries):
         fail("every research-ledger entry must have status=verified after review")
     if any(not entry.get("sources") for entry in entries):
@@ -68,6 +68,18 @@ def main() -> None:
     for key in ("starseries_fall_2026", "blast_open_porto_2026", "esl_pro_league_s24", "cs2_update", "major_vrs_cutoff"):
         if key not in calendar:
             fail(f"tournament.pre_event_calendar missing '{key}'")
+    # Fourth-pass data shape checks (Global Qualifier block, Bucharest, irregularities).
+    gq = data.get("tournament", {}).get("global_qualifier", {})
+    for key in ("slots", "format", "placings", "prize", "sources"):
+        if key not in gq:
+            fail(f"tournament.global_qualifier missing '{key}'")
+    if "1st" not in gq.get("placings", {}):
+        fail("global_qualifier.placings must include the winner (1st)")
+    cal4 = data.get("tournament", {}).get("pre_event_calendar", {})
+    if "pgl_masters_bucharest" not in cal4:
+        fail("tournament.pre_event_calendar missing 'pgl_masters_bucharest'")
+    if len(data.get("irregularities", [])) < 19:
+        fail("expected at least 19 flagged irregularities after the fourth pass")
     rows = [(c["date"], c["team"], c["change"]) for c in data.get("roster_changes_timeline", [])]
     if len(rows) != len(set(rows)):
         fail("roster timeline contains duplicate rows")
@@ -77,16 +89,24 @@ def main() -> None:
     # The second- and third-pass entries must be mirrored on the Verified List page.
     master = (ROOT / "master-list.html").read_text(encoding="utf-8")
     for probe in ("Entries 21–40", "DragonClaw", "MR12", "Entries 41–60", "StarSeries",
-                  "12,500", "Schengen", "Pro League", "60-entry ledger"):
+                  "12,500", "Schengen", "Pro League", "Entries 61–80", "Global Qualifier",
+                  "MongolZ", "Bucharest", "device", "80-entry ledger"):
         if probe not in master:
-            fail(f"master-list.html is missing pass-2/3 content ({probe!r})")
+            fail(f"master-list.html is missing pass 2-4 content ({probe!r})")
     section = master.split('id="entries-41-60"', 1)
     if len(section) != 2:
         fail("master-list.html lacks the entries-41-60 section")
-    body = section[1].split('id="irregularities"', 1)[0]
+    body = section[1].split('id="entries-61-80"', 1)[0]
     shown = [int(n) for n in re.findall(r'<td class="num">(\d+)</td>', body)]
     if shown != list(range(41, 61)):
         fail(f"entries 41-60 table must list IDs 41..60 in order, found {shown}")
+    section4 = master.split('id="entries-61-80"', 1)
+    if len(section4) != 2:
+        fail("master-list.html lacks the entries-61-80 section")
+    body4 = section4[1].split('id="irregularities"', 1)[0]
+    shown4 = [int(n) for n in re.findall(r'<td class="num">(\d+)</td>', body4)]
+    if shown4 != list(range(61, 81)):
+        fail(f"entries 61-80 table must list IDs 61..80 in order, found {shown4}")
 
     # Retired claims must not reappear anywhere (corrected in pass 3).
     for page in ROOT.glob("*.html"):
@@ -112,8 +132,9 @@ def main() -> None:
     if local_link_errors:
         fail("broken local links: " + ", ".join(local_link_errors))
 
-    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 60 verified ledger entries, "
-          "ranking/schedule/rules/calendar blocks, entries 41-60 mirrored, retired claims absent, local links + anchors")
+    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 80 verified ledger entries, "
+          "ranking/schedule/rules/calendar/GQ blocks, entries 41-60 and 61-80 mirrored, "
+          "retired claims absent, local links + anchors")
 
 
 if __name__ == "__main__":

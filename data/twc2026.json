@@ -5,7 +5,7 @@
     "verification_method": "Each published claim is checked against the linked public source text or structured record. Source conflicts, moving rankings and unavailable pre-event statistics are kept visible; see data/research-ledger.json and the Verified List page.",
     "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant.",
     "research_ledger": "data/research-ledger.json",
-    "verification_passes": "Three passes: first build and 20 new ledger entries on Sept 23, 2026; third pass on Sept 24, 2026 (20 more entries, the rulebook, corrections). Ledger: data/research-ledger.json (60 entries)."
+    "verification_passes": "Four passes of 20 new ledger entries each: first build and entries 1-20 on Sept 23, 2026 (pass 2, entries 21-40, same day); pass 3 (entries 41-60) and pass 4 (entries 61-80) on Sept 24, 2026. Pass 4 added the Global Qualifier deep-dive, the official-page contradiction, field absences, The MongolZ crisis, PGL Masters Bucharest and the \"final VRS opportunity\" conflict, EPL S24 field checks, odds status, prize-share columns and sponsor/source-independence notes. Ledger: data/research-ledger.json (80 entries)."
   },
   "tournament": {
     "name": "Thunderpick World Championship 2026 (TWC 2026)",
@@ -95,7 +95,8 @@
       "esl_pro_league_s24": {
         "dates": "Oct 3-11, 2026 (Katowice; final Oct 11)",
         "twc_teams": "Falcons, 9z, Legacy, FURIA, BetBoom, Aurora, PARIVISION (all except Virtus.pro)",
-        "source": "https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24"
+        "source": "https://liquipedia.net/counterstrike/ESL/Pro_League/Season_24",
+        "extra": "All 12 VRS invites were accepted (no declines); ECL champions: 1win (TDK core + fame + PARIVISION-loanee BELCHONOKK), M80, ShindeN, TYLOO. Group seeding set Sept 21; Spodek Arena playoffs Oct 9-11."
       },
       "cs2_update": {
         "dates": "Sept 22, 2026",
@@ -105,7 +106,42 @@
       "major_vrs_cutoff": {
         "dates": "Nov 2, 2026 (the Oct 5 snapshot is the only one before it)",
         "source": "https://www.talkesport.com/news/pgl-major-singapore-2026-third-place-match-vrs-cutoff-november-2-deadlines/"
+      },
+      "pgl_masters_bucharest": {
+        "dates": "October 24-31, 2026",
+        "what": "PGL Masters Bucharest: 16 teams, $1,250,000 (50/50 player/club), PGL Studio Bucharest; Bo3 Swiss into single-elim playoffs, Bo5 final; Valve Tier 1",
+        "why_it_matters": "Last Tier-1 stop before the Nov 2 VRS cutoff (Major invites). Invites from the July 6 VRS; main-event seeding uses the October 5 VRS snapshot - the one TWC results can move. Five TWC teams are in the announced field (FURIA, Legacy, Aurora, 9z, BetBoom); Falcons were the only top team to skip the invite round.",
+        "sources": [
+          "https://liquipedia.net/counterstrike/PGL/2026/Masters",
+          "https://www.talkesport.com/news/cs2/pgl-bucharest-masters-2026/",
+          "https://www.shanethegamer.com/esports-news/pgl-masters-bucharest-2026-cs2/",
+          "https://egamersworld.com/counterstrike/event/pgl-masters-bucharest-2026-thkIFvyQ2",
+          "https://www.hltv.org/news/45146/falcons-the-only-top-team-to-skip-pgl-masters-bucharest-as-invites-are-announced"
+        ]
       }
+    },
+    "global_qualifier": {
+      "name": "TWC 2026 Finals - Global Qualifier",
+      "dates": "September 9-13, 2026 (groups Sep 9-11, playoffs Sep 12-13)",
+      "location": "Online, Europe (teams physically based in Europe)",
+      "teams": 16,
+      "slots": "14 Europe VRS invites + 1 North America + 1 South America (Americas VRS filtered), from the Aug 3 VRS; initial seeding used the September VRS",
+      "format": "4 GSL groups of 4 - 8-team single-elimination playoff (HLTV: 'Play-in'); Bo3 except Bo5 Grand Final",
+      "prize": "No prize money - 'Spot at Main Event' only",
+      "placings": {
+        "1st": "Virtus.pro (qualified for the Finals)",
+        "2nd": "HOTU",
+        "3rd-4th": "HEROIC, BBL",
+        "5th-8th": "1win, 100 Thieves, Wildcard, FOKUS",
+        "9th-12th": "Ninjas in Pyjamas, 3DMAX, Nemesis, K27",
+        "13th-16th": "INFINITE, Acend, EYEBALLERS, BESTIA"
+      },
+      "notes": "Official page contradicts itself ('Four teams will earn a slot' vs 'the winner earns a spot') - see irregularities. 100 Thieves fielded device and rain and went out 0-2 to HOTU in the quarterfinals. Americas VRS invitees received T&A for 6 pax (arrival Sep 7, departure Sep 14).",
+      "sources": [
+        "https://world-championship.thunderpick.io/2026-finals-global-qualifier/",
+        "https://www.hltv.org/events/9308/thunderpick-world-championship-2026-closed-qualifier",
+        "https://esportsinsider.com/betting-odds/counter-strike/cs-go-thunderpick-world-championship-closed-qualifier-2026"
+      ]
     }
   },
   "circuit_2026": [
@@ -1010,6 +1046,12 @@
       "source": "https://www.hltv.org/news/44998/summer-2026-rostermania-as-it-happened"
     },
     {
+      "date": "2026-07",
+      "team": "The MongolZ",
+      "change": "Ecosystem watch - the 2024 TWC champions (not in the 2026 field) sign tikuak (17, Chinggis Warriors) and academy graduate DarkMeister (18) after benching cobrazera and losing mzinho to BC.Game",
+      "source": "https://www.strafe.com/news/read/the-mongolz-finalizes-cs2-roster-with-two-youngsters/"
+    },
+    {
       "date": "2026-07-02",
       "team": "Aurora",
       "change": "MAJ3R steps down; soulfly benched; MOUZ and Jimpphat part ways",
@@ -1076,10 +1118,22 @@
       "source": "https://virtus.pro/news/virtus-pro-announce-fame-s-transfer"
     },
     {
+      "date": "2026-08-10",
+      "team": "Ecosystem",
+      "change": "EPL S24 invites: all 12 VRS invites accepted - 7 TWC teams attend Katowice (Oct 3-11); Virtus.pro is the only TWC team absent. 1win qualify via ECL with the TDK core + fame + PARIVISION-loanee BELCHONOKK",
+      "source": "https://www.hltv.org/news/45270/esl-pro-league-s24-invites-announced"
+    },
+    {
       "date": "2026-09-13",
       "team": "Virtus.pro",
       "change": "Won the TWC Global Qualifier (3–0 vs HOTU) for the eighth Finals spot — after losing the opener to K27 and winning five straight elimination-risk series (Sep 9–13)",
       "source": "https://www.fragster.com/virtus-pro-thunderpick-world-championship-2026/"
+    },
+    {
+      "date": "2026-09-15",
+      "team": "The MongolZ",
+      "change": "Ecosystem drama - tikuak and DarkMeister benched two months after signing (official X post, Sept 15); The MongolZ down to three active players (bLitz, Techno, 910) heading into the Major-cutoff window",
+      "source": "https://www.shanethegamer.com/news/the-mongolz-bench-tikuak-darkmeister/"
     },
     {
       "date": "2026-09-16",
@@ -1130,7 +1184,7 @@
     },
     {
       "issue": "Ranking confusion across outlets",
-      "detail": "PRNewswire (Sept 16) listed e.g. 'Legacy #3, Falcons #4, FURIA #8'; esportbet wrote 'Falcons #2, FURIA #4'. These mix ranking systems/dates (HLTV weekly vs Valve VRS snapshots vs HLTV's live Valve ranking). Example: Legacy is #6 on HLTV's Sept 21 ranking, #6 on Valve's Sept 7 VRS snapshot, but #2 on HLTV's live Valve ranking badge (Sept 23). Verified on Sept 23: the HLTV event page badges carry both ranks - e.g., Legacy shows #6 (HLTV weekly) and #2 (live Valve); FURIA #4 / #8; Falcons #5 / #5; BetBoom #15 / #10; 9z #16 / #13; PARIVISION #19 / #23; VP #50 / #43.",
+      "detail": "PRNewswire (Sept 16) listed e.g. 'Legacy #3, Falcons #4, FURIA #8'; esportbet wrote 'Falcons #2, FURIA #4'. These mix ranking systems/dates (HLTV weekly vs Valve VRS snapshots vs HLTV's live Valve ranking). Example: Legacy is #6 on HLTV's Sept 21 ranking, #6 on Valve's Sept 7 VRS snapshot, but #2 on HLTV's live Valve ranking badge (Sept 23). Verified on Sept 23: the HLTV event page badges carry both ranks - e.g., Legacy shows #6 (HLTV weekly) and #2 (live Valve); FURIA #4 / #8; Falcons #5 / #5; BetBoom #15 / #10; 9z #16 / #13; PARIVISION #19 / #23; VP #50 / #43. esportbet (Sept 16) adds a third variant: \"BetBoom, 9z and PARIVISION, currently ranked 12th, 14th and 19th in the global standings\" - these labels match no published snapshot (Valve Aug 3 / Sept 7, HLTV Sept 21) and are treated as unverifiable outlet labels.",
       "resolution": "Site always labels which system and which date: HLTV World Ranking (Sept 21) and Valve VRS official snapshots (Aug 3 invite basis; Sept 7 latest published)."
     },
     {
@@ -1145,8 +1199,8 @@
     },
     {
       "issue": "No outright winner odds available at research time",
-      "detail": "esportbet's dedicated TWC betting hub still showed no TWC odds at the Sept 23 second-pass check; Thunderpick (title sponsor) will offer markets per their official site.",
-      "resolution": "Betting guide provides verified form/H2H data and a framework instead of live odds; links provided for manual odds checks."
+      "detail": "esportbet's dedicated TWC betting hub still showed 'Odds for the Thunderpick World Championship are not available' at the Sept 24 fourth-pass check (its Sept 16 article: bookmakers \"have yet to open outright markets\"); esportsinsider's odds feed carried no futures even for the Global Qualifier. Thunderpick (title sponsor) will offer markets per their official site.",
+      "resolution": "Betting guide provides verified form/H2H data and a framework instead of live odds; links provided for manual odds checks. Re-check after Oct 3 (EPL) and before Oct 14."
     },
     {
       "issue": "IGL labels (minor)",
@@ -1197,15 +1251,25 @@
       "issue": "TWC 2027 placeholder data on HLTV",
       "detail": "HLTV already lists TWC 2027 (Oct 18-25, 2027) with a placeholder map pool.",
       "resolution": "Not used; noted only so readers do not mistake it for 2026 data."
+    },
+    {
+      "issue": "Official Global Qualifier page contradicts itself on how many teams qualify",
+      "detail": "The page states 'Four teams will earn a slot in the TWC Finals' but later says 'The winner of the Global Qualifier earns a spot in the TWC 2026 Finals (Main Event)'. HLTV's result record shows a single qualifier (Virtus.pro). The 'four teams' line appears to be stale template text (ledger entry 64).",
+      "resolution": "Site uses one slot (winner only) per the results record and the page's own trophy line; the contradiction is published as-is for manual review."
+    },
+    {
+      "issue": "'Final VRS opportunity' claim conflicts with PGL Masters Bucharest",
+      "detail": "esportbet (Sept 16) called TWC 'the final opportunity for participating teams to secure VRS points ahead of the Singapore Major'. But PGL Masters Bucharest (Oct 24-31) ends before the Nov 2 VRS cutoff and includes at least five TWC teams (FURIA, Legacy, Aurora, 9z, BetBoom). The claim holds only for Falcons (skipped Bucharest) and possibly Virtus.pro (ledger entry 74).",
+      "resolution": "Site wording stays 'one of the last VRS-point opportunities'; the conflict is flagged here. Betting guide treats TWC as the last VRS event only for Falcons/VP."
     }
   ],
   "limitations": [
-    "Match/outright odds for TWC 2026 were still not published at the third-pass check (Sept 24, 2026; esportbet, Sept 16: bookmakers have yet to open outright markets). The betting analysis is a framework plus verified form data, not live prices.",
+    "Match/outright odds for TWC 2026 were still not published at the fourth-pass check (Sept 24, 2026): esportbet's TWC hub showed \"Odds ... are not available\" and esportsinsider carried no futures. The betting analysis is a framework plus verified form data, not live prices.",
     "The group draw and day-by-day match schedule are not yet published (only the finals-week structure is). The seed order shown is inferred from the Sept 7 VRS.",
     "HLTV player statistics for the Finals will only exist after the event; linked for post-event review.",
     "Head-to-head data covers all four 2026 FURIA-Falcons meetings plus the 2025 BLAST Rivals final; full H2H scraping (all 28 pairings, all maps) is future work.",
     "Some primary sources are X/Twitter posts or Google Drive files (the rulebook) which may require login or change without notice.",
     "Rankings move weekly (HLTV) and per snapshot (Valve). Every rank figure on the site is labeled with its system and date. The Oct 5 VRS snapshot will change the numbers but not the seeding (which uses September).",
-    "ESL Pro League S24 (Oct 3-11) results and any post-Sept 24 roster news are not captured and must be added in a follow-up pass before Oct 14."
+    "ESL Pro League S24 (Oct 3-11) results and any post-Sept 24 roster news are not captured and must be added in a follow-up pass before Oct 14. PGL Masters Bucharest (Oct 24-31) outcomes and opening odds are also uncaptured; the group draw and day-by-day schedule remain unpublished as of Sept 24."
   ]
 }
