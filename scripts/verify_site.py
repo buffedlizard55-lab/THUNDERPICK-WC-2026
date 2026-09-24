@@ -36,8 +36,8 @@ def main() -> None:
 
     entries = ledger.get("entries", [])
     ids = [entry.get("id") for entry in entries]
-    if ids != list(range(1, 41)):
-        fail(f"research ledger must contain IDs 1..40 in order (two passes), found {ids}")
+    if ids != list(range(1, 61)):
+        fail(f"research ledger must contain IDs 1..60 in order (three passes), found {ids}")
     if any(entry.get("status") != "verified" for entry in entries):
         fail("every research-ledger entry must have status=verified after review")
     if any(not entry.get("sources") for entry in entries):
@@ -57,11 +57,44 @@ def main() -> None:
     if len(timeline_dates) != len(set(timeline_dates)) and len(set(timeline_dates)) < 30:
         fail("roster timeline lost entries during the second pass")
 
-    # The 20 second-pass entries must be mirrored on the Verified List page.
+    # Third-pass data shape checks (rulebook + pre-event calendar).
+    rules = data.get("tournament", {}).get("rules", {})
+    for key in ("core_roster", "stand_in", "server", "veto_bo3", "veto_bo5", "withdrawal", "seeding", "source"):
+        if key not in rules:
+            fail(f"tournament.rules missing '{key}'")
+    if "12,500" not in rules["server"]:
+        fail("tournament.rules.server must state the $12,500 overtime money from the rulebook")
+    calendar = data.get("tournament", {}).get("pre_event_calendar", {})
+    for key in ("starseries_fall_2026", "blast_open_porto_2026", "esl_pro_league_s24", "cs2_update", "major_vrs_cutoff"):
+        if key not in calendar:
+            fail(f"tournament.pre_event_calendar missing '{key}'")
+    rows = [(c["date"], c["team"], c["change"]) for c in data.get("roster_changes_timeline", [])]
+    if len(rows) != len(set(rows)):
+        fail("roster timeline contains duplicate rows")
+    if [r[0] for r in rows] != sorted(r[0] for r in rows):
+        fail("roster timeline must be sorted by date")
+
+    # The second- and third-pass entries must be mirrored on the Verified List page.
     master = (ROOT / "master-list.html").read_text(encoding="utf-8")
-    for probe in ("21", "40", "Entries 21–40", "DragonClaw", "MR12"):
+    for probe in ("Entries 21–40", "DragonClaw", "MR12", "Entries 41–60", "StarSeries",
+                  "12,500", "Schengen", "Pro League", "60-entry ledger"):
         if probe not in master:
-            fail(f"master-list.html is missing second-pass content ({probe!r})")
+            fail(f"master-list.html is missing pass-2/3 content ({probe!r})")
+    section = master.split('id="entries-41-60"', 1)
+    if len(section) != 2:
+        fail("master-list.html lacks the entries-41-60 section")
+    body = section[1].split('id="irregularities"', 1)[0]
+    shown = [int(n) for n in re.findall(r'<td class="num">(\d+)</td>', body)]
+    if shown != list(range(41, 61)):
+        fail(f"entries 41-60 table must list IDs 41..60 in order, found {shown}")
+
+    # Retired claims must not reappear anywhere (corrected in pass 3).
+    for page in ROOT.glob("*.html"):
+        html = page.read_text(encoding="utf-8")
+        if re.search(r"\$10,000</b> OT|\$10,000 OT money at Majors", html):
+            fail(f"{page.name} still carries the retired '$10,000 OT at Majors' claim")
+        if "entire Cologne Major campaign (5th–8th) as BetBoom's fifth, deputizing for visa-hit d1Ledez" in html:
+            fail(f"{page.name} still carries the retired BetBoom/Cologne claim")
 
     # Catch broken local links without attempting remote network checks.
     local_link_errors = []
@@ -70,14 +103,17 @@ def main() -> None:
         for href in re.findall(r'href="([^"]+)"', html):
             if href.startswith(("http://", "https://", "mailto:", "#")):
                 continue
-            target = href.split("#", 1)[0]
+            target, _, frag = href.partition("#")
             if target and not (page.parent / target).exists():
                 local_link_errors.append(f"{page.name}: {href}")
+            elif frag and target.endswith(".html"):
+                if f'id="{frag}"' not in (page.parent / target).read_text(encoding="utf-8"):
+                    local_link_errors.append(f"{page.name}: {href} (missing anchor)")
     if local_link_errors:
         fail("broken local links: " + ", ".join(local_link_errors))
 
-    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 40 verified ledger entries, "
-          "second-pass ranking/schedule blocks, and local links")
+    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 60 verified ledger entries, "
+          "ranking/schedule/rules/calendar blocks, entries 41-60 mirrored, retired claims absent, local links + anchors")
 
 
 if __name__ == "__main__":
