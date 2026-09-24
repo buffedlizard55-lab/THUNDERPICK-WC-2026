@@ -57,9 +57,7 @@ Key verification anchors:
 │   ├── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
 │   └── research-ledger.json   ← 100 dated research entries (20 per pass) and source links
 ├── scripts/
-│   ├── verify_site.py         ← zero-dependency local integrity check (run before publishing)
-│   ├── pass5_ledger.py        ← pass-5 migration: appends ledger entries 81–100 (provenance)
-│   └── pass5_data.py          ← pass-5 migration: data/twc2026.json updates (provenance)
+│   └── verify_site.py         ← zero-dependency local integrity check (run before publishing)
 ├── assets/
 │   └── style.css              ← design system (no JS dependencies)
 ├── index.html                 ← tournament overview          (GitHub Pages serves
