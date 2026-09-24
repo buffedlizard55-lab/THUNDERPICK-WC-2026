@@ -14,7 +14,7 @@ A verified, source-linked knowledge base for the tournament, aimed at readers wh
 - **Roster change tracker** — every verified transfer/benching/signing affecting the field, with dates, sources and impact notes
 - **Betting guide** — format implications for markets, favorites/dark horses with verified form data, risk register (educational; no odds are invented)
 - **CS2 universe guide** — game rules, ecosystem (VRS, Majors, tiers), 2026 meta and map pool
-- **Verified master list** — an audit ledger: 20 new research entries verified line-by-line before being added, plus flagged irregularities, limitations and the complete source directory
+- **Verified master list** — an audit ledger: 40 research entries (two passes of 20, each verified line-by-line before being added), plus flagged irregularities, limitations and the complete source directory
 
 ## The no-hallucination rule
 
@@ -28,8 +28,12 @@ Key verification anchors:
 | Invite basis | Valve VRS Global (official GitHub) | Aug 3, 2026 |
 | Latest Valve ranks | Valve VRS Global (official GitHub) | Sept 7, 2026 |
 | HLTV world ranking | HLTV ranking page | Sept 21, 2026 |
+| Live Valve ranks (HLTV badges) | HLTV event page | Sept 23, 2026 |
+| Finals-week schedule | Official TWC site | Sept 23, 2026 |
 | Roster changes | HLTV news / official club announcements | per event date |
 | Prize pool & format | Official Thunderpick releases + Liquipedia | Sept 23, 2026 |
+| 2025 player ranking | HLTV Top 20 of 2025 (final list) | Jan 10, 2026 |
+| Regional series results | HLTV event pages / Liquipedia / Hotspawn | per event date |
 
 ## Repository structure
 
@@ -38,7 +42,7 @@ Key verification anchors:
 ├── .nojekyll                  ← tells GitHub Pages to serve files verbatim
 ├── data/
 │   ├── twc2026.json           ← machine-readable master data (teams, rosters, changes, flags)
-│   └── research-ledger.json   ← exactly 20 dated research entries and source links
+│   └── research-ledger.json   ← 40 dated research entries (20 per pass) and source links
 ├── scripts/
 │   └── verify_site.py         ← zero-dependency local integrity check
 ├── assets/
@@ -57,11 +61,12 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 
 ## Data status & known limitations
 
-- **Data cutoff: September 23, 2026.** Roster moves, the group draw, the schedule and odds released after this date are not yet captured.
-- Outright/match odds for TWC 2026 were **not yet published** at research time; the betting guide deliberately contains no invented prices — only verified historical results and a framework.
-- Group draw and day-by-day schedule: **TBD** (to be added when published).
+- **Data cutoff: September 23, 2026 (two research passes on the same day).** Roster moves, the group draw, the schedule and odds released after this date are not yet captured.
+- Outright/match odds for TWC 2026 were **still not published** at the second-pass check; the betting guide deliberately contains no invented prices — only verified historical results and a framework.
+- Group draw and day-by-day schedule: **TBD** (to be added when published). The finals-week structure (arrival Oct 12 → departure Oct 19; match days Oct 14–18) is verified from the official site.
 - Some primary sources are X/Twitter posts (e.g., PARIVISION's announcements) that may require login to view.
-- Rankings move weekly (HLTV) / per-snapshot (Valve); every rank figure on the site is labeled with system + date.
+- Rankings move weekly (HLTV) / per-snapshot (Valve) / continuously (HLTV's live Valve badge); every rank figure on the site is labeled with system + date.
+- Second-pass additions: previous editions' full context (2023 FaZe, 2024 The MongolZ in Berlin, 2025 FURIA), all five 2026 regional series results, HLTV's 2025 Top 20 (six Finals players), the complete FURIA–Falcons H2H (Falcons 4–0 in 2026), CS2 MR12 rules, VRS mechanics, and the BetBoom visa/ArtFr0st chain.
 
 ## Next steps (planned for a follow-up session)
 
@@ -73,7 +78,7 @@ The site is dependency-free HTML/CSS (no build step, no tracking, no external sc
 
 ## Updating the site
 
-Run `python3 scripts/verify_site.py` before publishing. It checks the eight-team/roster shape, the 20-entry ledger, reserve fields and local links; it does not replace manual review of remote sources.
+Run `python3 scripts/verify_site.py` before publishing. It checks the eight-team/roster shape, the 40-entry ledger (both passes), the second-pass data blocks (live Valve ranks, finals-week schedule), reserve fields and local links; it does not replace manual review of remote sources.
 
 Edit the root HTML files (and mirror structural data changes into `data/twc2026.json` and `data/research-ledger.json`), commit to a branch, open a PR, and merge — GitHub Pages serves the repository root from `main` (`.nojekyll` is present).
 

@@ -36,12 +36,32 @@ def main() -> None:
 
     entries = ledger.get("entries", [])
     ids = [entry.get("id") for entry in entries]
-    if ids != list(range(1, 21)):
-        fail(f"research ledger must contain IDs 1..20 in order, found {ids}")
+    if ids != list(range(1, 41)):
+        fail(f"research ledger must contain IDs 1..40 in order (two passes), found {ids}")
     if any(entry.get("status") != "verified" for entry in entries):
         fail("every research-ledger entry must have status=verified after review")
     if any(not entry.get("sources") for entry in entries):
         fail("every research-ledger entry must have at least one review URL")
+
+    # Second-pass data shape checks.
+    rankings = data.get("rankings_snapshot", {})
+    if "hltv_live_valve_ranking_2026_09_23" not in rankings:
+        fail("rankings snapshot must include the Sept 23 live Valve ranking block")
+    if len(rankings["hltv_live_valve_ranking_2026_09_23"]["twc_teams"]) != 8:
+        fail("the live Valve ranking block must cover all eight teams")
+    schedule = data.get("tournament", {}).get("finals_week_schedule", {})
+    for key in ("arrival_day", "media_day", "group_stage", "playoffs", "departure_day"):
+        if key not in schedule:
+            fail(f"finals_week_schedule missing '{key}'")
+    timeline_dates = sorted(c["date"] for c in data.get("roster_changes_timeline", []))
+    if len(timeline_dates) != len(set(timeline_dates)) and len(set(timeline_dates)) < 30:
+        fail("roster timeline lost entries during the second pass")
+
+    # The 20 second-pass entries must be mirrored on the Verified List page.
+    master = (ROOT / "master-list.html").read_text(encoding="utf-8")
+    for probe in ("21", "40", "Entries 21–40", "DragonClaw", "MR12"):
+        if probe not in master:
+            fail(f"master-list.html is missing second-pass content ({probe!r})")
 
     # Catch broken local links without attempting remote network checks.
     local_link_errors = []
@@ -56,7 +76,8 @@ def main() -> None:
     if local_link_errors:
         fail("broken local links: " + ", ".join(local_link_errors))
 
-    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 20 verified ledger entries, and local links")
+    print("OK: 8 teams, 40 players, 8 coaches, bench/reserve fields, 40 verified ledger entries, "
+          "second-pass ranking/schedule blocks, and local links")
 
 
 if __name__ == "__main__":

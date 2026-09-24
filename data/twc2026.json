@@ -4,7 +4,8 @@
     "data_verified_as_of": "2026-09-23",
     "verification_method": "Each published claim is checked against the linked public source text or structured record. Source conflicts, moving rankings and unavailable pre-event statistics are kept visible; see data/research-ledger.json and the Verified List page.",
     "notes": "Counter-Strike rosters and rankings change frequently. Ranking figures are snapshots with exact dates. Live Valve (VRS) rankings on HLTV differ from Valve's last published snapshot; both are cited where relevant.",
-    "research_ledger": "data/research-ledger.json"
+    "research_ledger": "data/research-ledger.json",
+    "verification_passes": "Two passes on Sept 23, 2026 (first build + 20 new ledger entries in the second pass). Ledger: data/research-ledger.json (40 entries)."
   },
   "tournament": {
     "name": "Thunderpick World Championship 2026 (TWC 2026)",
@@ -47,11 +48,22 @@
       "youtube.com/@thunderpickesports"
     ],
     "previous_winners": {
-      "2023": "FaZe (online edition)",
-      "2024": "The MongolZ",
-      "2025": "FURIA (reverse sweep 3-2 vs NAVI in Malta)"
+      "2023": "FaZe (beat Virtus.pro; ropz MVP; $500,000 event)",
+      "2024": "The MongolZ (3-1 vs HEROIC in Berlin, Nov 3, 2024; 16 teams, $850,000 total; 3DMAX 3rd)",
+      "2025": "FURIA (reverse sweep 3-2 vs NAVI in Malta; KSCERATO Grand Final MVP; NAVI $150k, MongolZ $70k, Aurora $50k)"
     },
-    "context": "One of the last VRS point opportunities before the PGL Major Singapore 2026 (Nov 25 - Dec 13); PGL Masters Bucharest (Oct 24-31) follows one week after TWC."
+    "context": "One of the last VRS point opportunities before the PGL Major Singapore 2026 (Nov 25 - Dec 13); PGL Masters Bucharest (Oct 24-31) follows one week after TWC.",
+    "finals_week_schedule": {
+      "arrival_day": "October 12, 2026",
+      "media_day": "October 13, 2026",
+      "group_stage": "October 14-16, 2026",
+      "playoffs": "October 17-18, 2026",
+      "departure_day": "October 19, 2026",
+      "travel_and_accommodation": "TWC covers T&A for up to 7 persons per team",
+      "source": "https://world-championship.thunderpick.io/2026-finals/"
+    },
+    "twc_2025_viewership": "Set the series record: +62% over the 2024 finals (official PR, Oct 27, 2025)",
+    "note_dates": "The official site headline \"12-19 October\" is the full Finals week (arrival Oct 12 through departure Oct 19); match days are Oct 14-18. This resolves the earlier flag about HLTV's \"October 12-19\" plan."
   },
   "circuit_2026": [
     {
@@ -61,7 +73,11 @@
       "teams": 12,
       "winner": "M80",
       "runner_up": "Wildcard",
-      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/North_America"
+      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/North_America",
+      "note": "M80 beat Wildcard 2-0 (16-14 Dust2, 13-10 Inferno) in the final; only two of seven playoff series were played - the rest were forfeits by teams unable to field eligible lineups (Liquipedia logs the forfeits).",
+      "extra_sources": [
+        "https://csgo.com/news/142926-m80-win-thunderpick-world-championship-2026-north-america"
+      ]
     },
     {
       "stage": "European Series #1",
@@ -70,7 +86,12 @@
       "teams": 24,
       "winner": "DragonClaw",
       "runner_up": "TDK",
-      "source": "https://www.hltv.org/events/9171/thunderpick-world-championship-2026-europe-series-1"
+      "source": "https://www.hltv.org/events/9171/thunderpick-world-championship-2026-europe-series-1",
+      "note": "Winner played as VRSDelivery in the final (May 31); the org renamed to DragonClaw on May 30, 2026 (Liquipedia). TDK (nafany, Ax1Le) finished 2nd.",
+      "extra_sources": [
+        "https://www.hotspawn.com/counter-strike/news/vrsdelivery-win-thunderpick-world-championship-2026-eu-series-1",
+        "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Europe/1"
+      ]
     },
     {
       "stage": "South American Series #1",
@@ -79,7 +100,8 @@
       "teams": 12,
       "winner": "ShindeN",
       "runner_up": "UNO MILLE",
-      "source": "https://www.hltv.org/events/9239/thunderpick-world-championship-2026-south-america-series-1"
+      "source": "https://www.hltv.org/events/9239/thunderpick-world-championship-2026-south-america-series-1",
+      "note": "ShindeN (Argentina) beat UNO MILLE (Brazil)."
     },
     {
       "stage": "South American Series #2",
@@ -88,7 +110,11 @@
       "teams": 12,
       "winner": "Imperial",
       "runner_up": "BESTIA",
-      "source": "https://www.hltv.org/events/9274/thunderpick-world-championship-2026-south-america-series-2"
+      "source": "https://www.hltv.org/events/9274/thunderpick-world-championship-2026-south-america-series-2",
+      "note": "Imperial won 2-0 (8-4 first halves on both Dust2 and Inferno); their 4-0 start after signing saadzin from Legacy.",
+      "extra_sources": [
+        "https://www.hotspawn.com/counter-strike/news/imperial-win-thunderpick-world-championship-2026-sa-series-2"
+      ]
     },
     {
       "stage": "European Series #2",
@@ -97,7 +123,8 @@
       "teams": 24,
       "winner": "GenOne",
       "runner_up": "Lazer Cats",
-      "source": "https://www.hltv.org/events/9296/thunderpick-world-championship-2026-europe-series-2"
+      "source": "https://www.hltv.org/events/9296/thunderpick-world-championship-2026-europe-series-2",
+      "note": "CYBERSHOKE (PARIVISION loanee nota) and ex-1win shared 3rd-4th."
     },
     {
       "stage": "Global Qualifier (Closed, online Europe)",
@@ -170,6 +197,20 @@
       },
       "note": "August 3, 2026 VRS snapshot was the basis for the 7 direct Finals invites; Virtus.pro qualified via the Global Qualifier instead.",
       "source": "https://github.com/ValveSoftware/counter-strike_regional_standings/blob/main/invitation/2026/standings_global_2026_08_03.md"
+    },
+    "hltv_live_valve_ranking_2026_09_23": {
+      "note": "HLTV's continuously-updated live implementation of the Valve ranking, read from each team's badge on the TWC 2026 event page on Sept 23, 2026. Differs from Valve's last published snapshot (Sept 7) because it includes results after that date (e.g., Legacy's FISSURE Playground 3 title).",
+      "twc_teams": {
+        "Legacy": 2,
+        "Falcons": 5,
+        "FURIA": 8,
+        "Aurora": 9,
+        "BetBoom": 10,
+        "9z": 13,
+        "PARIVISION": 23,
+        "Virtus.pro": 43
+      },
+      "source": "https://www.hltv.org/events/8932/thunderpick-world-championship-2026"
     }
   },
   "teams": [
@@ -799,6 +840,12 @@
       "source": "https://www.hltv.org/news/41512/furia-bench-skullz-add-yekindar-as-stand-in"
     },
     {
+      "date": "2025-04-05",
+      "team": "Aurora",
+      "change": "Origin — Aurora sign the entire Eternal Fire roster (MAJ3R, XANTARES, woxic, Wicadia, jottAAA + coach Fabre) after sponsorship conditions in Turkey made continuing under EF untenable; the all-Turkish era ended July 2, 2026",
+      "source": "https://bo3.gg/news/aurora-sign-eternal-fire-roster"
+    },
+    {
       "date": "2025-11",
       "team": "9z",
       "change": "Sign luchov and meyern (urban0 and levi benched)",
@@ -841,6 +888,12 @@
       "source": "https://www.hltv.org/news/43812/official-legacy-sign-art"
     },
     {
+      "date": "2026-02-05",
+      "team": "BetBoom",
+      "change": "ArtFr0st joins permanently from PARIVISION (he had been BetBoom's loanee AWPer since July 2025)",
+      "source": "https://parivision.gg/feed/artfr0st-transfer-betboom/"
+    },
+    {
       "date": "2026-03-12",
       "team": "Virtus.pro",
       "change": "Academy rebuild finalized: mir returns as IGL; b1st and tO0RO (VP.Prodigy) stay; AquaRS and F0R3VER promoted — the academy core's VRS points became VP's lifeline",
@@ -853,6 +906,18 @@
       "source": "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues"
     },
     {
+      "date": "2026-03-23",
+      "team": "BetBoom",
+      "change": "FL4MUS (on loan) and zorte fielded as stand-ins for visa-hit d1Ledez AND ArtFr0st for three LANs (Bucharest, Portugal, Spain)",
+      "source": "https://www.hltv.org/news/44170/betboom-to-field-fl4mus-and-zorte-as-stand-ins-at-upcoming-lans-due-to-visa-issues"
+    },
+    {
+      "date": "2026-04-09",
+      "team": "BetBoom",
+      "change": "d1Ledez returns to the five; zorte kept for the season; ArtFr0st benched over the visa situation (missed IEM Atlanta)",
+      "source": "https://www.hltv.org/news/44322/d1ledez-returns-to-betbooms-starting-roster-as-zorte-stays-for-the-season-over-artfr0st"
+    },
+    {
       "date": "2026-04-17",
       "team": "FURIA",
       "change": "FalleN announces retirement at end of 2026 (on stage at IEM Rio)",
@@ -863,6 +928,12 @@
       "team": "Falcons",
       "change": "kyxsan benched (after 3rd place at IEM Rio); karrigan signed from FaZe as IGL",
       "source": "https://www.hltv.org/news/44428/falcons-confirm-karrigan-signing"
+    },
+    {
+      "date": "2026-05-30",
+      "team": "Circuit (EU Series 1)",
+      "change": "VRSDelivery rename to DragonClaw one day before winning TWC EU Series 1 - winner appears under two names across sources",
+      "source": "https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026/Europe/1"
     },
     {
       "date": "2026-06-17",
@@ -931,6 +1002,12 @@
       "source": "https://www.hltv.org/news/45200/parivision-sign-fl1t-to-replace-hobbit"
     },
     {
+      "date": "2026-08-01",
+      "team": "BetBoom / 1win",
+      "change": "ArtFr0st loaned to 1win as the TDK core transfers there; Ax1Le's move becomes permanent; PARIVISION's BELCHONOKK also loans to 1win",
+      "source": "https://www.hltv.org/news/45218/tdk-transfer-to-1win"
+    },
+    {
       "date": "2026-09-13",
       "team": "Virtus.pro",
       "change": "Won the TWC Global Qualifier (3–0 vs HOTU) for the eighth Finals spot — after losing the opener to K27 and winning five straight elimination-risk series (Sep 9–13)",
@@ -963,11 +1040,11 @@
     {
       "issue": "Early date plan superseded",
       "detail": "HLTV's Dec 11, 2025 article said the LAN finals would be 'October 12-19'. Final official dates are October 14-18, 2026.",
-      "resolution": "Site uses Oct 14-18 (Liquipedia, HLTV event page, official PR)."
+      "resolution": "Site uses Oct 14-18 (Liquipedia, HLTV event page, official PR). Resolved further: the official site's 'Finals 2026: 12-19 October' is the arrival-through-departure window (arrival Oct 12, media day Oct 13, groups Oct 14-16, playoffs Oct 17-18, departure Oct 19) - match days remain Oct 14-18."
     },
     {
       "issue": "Ranking confusion across outlets",
-      "detail": "PRNewswire (Sept 16) listed e.g. 'Legacy #3, Falcons #4, FURIA #8'; esportbet wrote 'Falcons #2, FURIA #4'. These mix ranking systems/dates (HLTV weekly vs Valve VRS snapshots vs HLTV's live Valve ranking). Example: Legacy is #6 on HLTV's Sept 21 ranking, #6 on Valve's Sept 7 VRS snapshot, but #2 on HLTV's live Valve ranking badge (Sept 23).",
+      "detail": "PRNewswire (Sept 16) listed e.g. 'Legacy #3, Falcons #4, FURIA #8'; esportbet wrote 'Falcons #2, FURIA #4'. These mix ranking systems/dates (HLTV weekly vs Valve VRS snapshots vs HLTV's live Valve ranking). Example: Legacy is #6 on HLTV's Sept 21 ranking, #6 on Valve's Sept 7 VRS snapshot, but #2 on HLTV's live Valve ranking badge (Sept 23). Verified on Sept 23: the HLTV event page badges carry both ranks - e.g., Legacy shows #6 (HLTV weekly) and #2 (live Valve); FURIA #4 / #8; Falcons #5 / #5; BetBoom #15 / #10; 9z #16 / #13; PARIVISION #19 / #23; VP #50 / #43.",
       "resolution": "Site always labels which system and which date: HLTV World Ranking (Sept 21) and Valve VRS official snapshots (Aug 3 invite basis; Sept 7 latest published)."
     },
     {
@@ -977,27 +1054,37 @@
     },
     {
       "issue": "Groups not yet drawn",
-      "detail": "As of Sept 23, 2026, both group placements and the match schedule for the Finals are TBD on Liquipedia and HLTV.",
+      "detail": "As of the second verification pass on Sept 23, 2026, group placements and the day-by-day schedule remain TBD on Liquipedia and HLTV; only the finals-week structure (arrival/media/group/playoff days) is published on the official site.",
       "resolution": "Marked as pending; to be updated in a future session."
     },
     {
       "issue": "No outright winner odds available at research time",
-      "detail": "esportbet's TWC page (the dedicated TWC betting hub) stated odds were not yet available as of the research date; Thunderpick (title sponsor) will offer markets per their official site.",
+      "detail": "esportbet's dedicated TWC betting hub still showed no TWC odds at the Sept 23 second-pass check; Thunderpick (title sponsor) will offer markets per their official site.",
       "resolution": "Betting guide provides verified form/H2H data and a framework instead of live odds; links provided for manual odds checks."
     },
     {
       "issue": "IGL labels (minor)",
       "detail": "9z's and PARIVISION's official in-game-leader designations are not explicitly stated in the sources gathered (max and Jame are the veteran leaders historically associated with calling)",
       "resolution": "Explicitly labeled 'not officially labeled' on the Players page rather than asserted"
+    },
+    {
+      "issue": "EU Series 1 winner appears under two names",
+      "detail": "Hotspawn's final report (May 31) names VRSDelivery; HLTV's prize list names DragonClaw. Liquipedia documents the rename on May 30, 2026 - same team. A related but separate item: Liquipedia logs DragonClaw's June 2 disqualification from European Pro League Series 7 pending an organizer investigation into 'suspicious activity' (a different event, not TWC).",
+      "resolution": "Site names DragonClaw (as VRSDelivery) with the rename explained; the EPL investigation is flagged as outside TWC scope."
+    },
+    {
+      "issue": "Falcons' 'grand finals' count is window-dependent",
+      "detail": "The 2025-26 pre-karrigan period is sometimes summarized as '7 grand finals, 1 title'. The precise, source-backed read: Falcons won PGL Bucharest 2025 (Apr 13, with degster) BEFORE m0NESY joined; with m0NESY they then lost seven straight finals (IEM Melbourne, BLAST Rivals Spring 2025, EWC 2025, ESL Pro League S22, IEM Chengdu 2025, BLAST Rivals Fall 2025, BLAST Bounty Winter 2026).",
+      "resolution": "Site states the precise sequence instead of a bare count."
     }
   ],
   "limitations": [
-    "Match/outright odds for TWC 2026 were not yet published at research time (Sept 23, 2026) — betting analysis is framework + verified form data, not live prices.",
-    "Group draw and day-by-day schedule for the Finals are not yet published.",
+    "Match/outright odds for TWC 2026 were still not published at the second-pass check (Sept 23, 2026) - betting analysis is framework + verified form data, not live prices.",
+    "Group draw and day-by-day schedule for the Finals are not yet published (only the finals-week structure is).",
     "HLTV player statistics for the Finals will only exist after the event; linked for post-event review.",
-    "Head-to-head data covers documented 2026 meetings only; full H2H scraping (all pairings, all maps) is future work.",
+    "Head-to-head data now covers all four 2026 FURIA-Falcons meetings plus the 2025 BLAST Rivals final, but full H2H scraping (all 28 pairings, all maps) is future work.",
     "Some primary sources are X/Twitter posts (e.g., PARIVISION announcements) which may require login to view.",
-    "Rankings move weekly (HLTV) and per-snapshot (Valve); this site pins exact dates for every ranking figure.",
+    "Rankings move weekly (HLTV) and per-snapshot (Valve); every rank figure on the site is labeled with system + date, including the live Valve ranks read from HLTV's event badges (Sept 23).",
     "Roster news after Sept 23, 2026 is not captured and should be added in a follow-up pass before the event (Oct 14-18)."
   ]
 }
